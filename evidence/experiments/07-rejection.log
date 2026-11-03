@@ -1,10 +1,10 @@
-12:28:17.354 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8546
+12:37:15.376 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8860
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-12:28:21.500 | INFO    | Flow run 'resilient-husky' - Beginning flow run 'resilient-husky' for flow 'model-release'
-12:28:21.519 | INFO    | Task run 'prepare_task-1c5' - Finished in state Cached(type=COMPLETED)
-12:28:21.537 | INFO    | Flow run 'resilient-husky' - Preparation state=Cached key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
-12:28:21.546 | INFO    | Task run 'artifact_task-562' - Finished in state Completed()
-12:28:21.549 | ERROR   | Task run 'gate_task-9a0' - Task run failed with exception: ValueError('Incomplete evaluation or quality rejection')
+12:37:19.480 | INFO    | Flow run 'married-malamute' - Beginning flow run 'married-malamute' for flow 'model-release'
+12:37:19.496 | INFO    | Task run 'prepare_task-d45' - Finished in state Cached(type=COMPLETED)
+12:37:19.516 | INFO    | Flow run 'married-malamute' - Preparation state=Cached key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
+12:37:19.523 | INFO    | Task run 'artifact_task-092' - Finished in state Completed()
+12:37:19.526 | ERROR   | Task run 'gate_task-0d0' - Task run failed with exception: ValueError('Incomplete evaluation or quality rejection')
 Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1058, in run_context
     yield self
@@ -16,13 +16,13 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 52, in gate_task
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
     validate_release(manifest, report)
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
     raise ValueError('Incomplete evaluation or quality rejection')
 ValueError: Incomplete evaluation or quality rejection
-12:28:21.552 | ERROR   | Task run 'gate_task-9a0' - Finished in state Failed('Task run encountered an exception ValueError: Incomplete evaluation or quality rejection')
-12:28:22.515 | ERROR   | Flow run 'resilient-husky' - Encountered exception during execution: ValueError('Incomplete evaluation or quality rejection')
+12:37:19.528 | ERROR   | Task run 'gate_task-0d0' - Finished in state Failed('Task run encountered an exception ValueError: Incomplete evaluation or quality rejection')
+12:37:20.495 | ERROR   | Flow run 'married-malamute' - Encountered exception during execution: ValueError('Incomplete evaluation or quality rejection')
 Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
     yield self
@@ -34,7 +34,7 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 78, in release_flow
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 81, in release_flow
     decision = gate_task(root, artifact, report_name)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\tasks.py", line 1240, in __call__
@@ -58,14 +58,14 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 52, in gate_task
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
     validate_release(manifest, report)
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
     raise ValueError('Incomplete evaluation or quality rejection')
 ValueError: Incomplete evaluation or quality rejection
-12:28:22.564 | INFO    | Flow run 'resilient-husky' - Finished in state Failed('Flow run encountered an exception: ValueError: Incomplete evaluation or quality rejection')
+12:37:20.525 | INFO    | Flow run 'married-malamute' - Finished in state Failed('Flow run encountered an exception: ValueError: Incomplete evaluation or quality rejection')
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 95, in <module>
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 98, in <module>
     release_flow(args.workspace, args.manifest, args.report, args.fail_after_prepare, args.fail_after_pointer)
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flows.py", line 1887, in __call__
     return run_flow(
@@ -88,7 +88,7 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 78, in release_flow
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 81, in release_flow
     decision = gate_task(root, artifact, report_name)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\tasks.py", line 1240, in __call__
@@ -112,9 +112,9 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 52, in gate_task
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
     validate_release(manifest, report)
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
     raise ValueError('Incomplete evaluation or quality rejection')
 ValueError: Incomplete evaluation or quality rejection
-12:28:22.586 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8546
+12:37:20.542 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8860

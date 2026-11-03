@@ -7,11 +7,13 @@ import subprocess
 import sys
 import tempfile
 import zipfile
+from local_network import configure_loopback
 
 ROOT = Path(__file__).resolve().parent
 
 
 def main():
+    configure_loopback()
     out = ROOT / 'evidence' / 'regressions'
     out.mkdir(parents=True, exist_ok=True)
     original = subprocess.check_output(['git', 'rev-list', '--max-parents=0', 'HEAD'], cwd=ROOT).decode().strip()

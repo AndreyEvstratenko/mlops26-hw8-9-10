@@ -67,51 +67,51 @@ test_runtime_change_with_stale_hash_rejected (test_release.ReleaseContractTests.
 FAIL: test_changed_bytes_at_same_path_invalidate_cache (test_release.ReleaseContractTests.test_changed_bytes_at_same_path_invalidate_cache)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 42, in test_changed_bytes_at_same_path_invalidate_cache
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 42, in test_changed_bytes_at_same_path_invalidate_cache
     self.assertNotEqual(old,release.cache_key(self.data,self.config))
-AssertionError: 'd7f7a97c72d7e7d7dbc9f5e2b742f7a6527eb4c573cd719ab6d044e731e01589' == 'd7f7a97c72d7e7d7dbc9f5e2b742f7a6527eb4c573cd719ab6d044e731e01589'
+AssertionError: 'c26e0afa2ed9281da6c8da6f68d958c4f14a57134fe83f6185deda4f7ab3990d' == 'c26e0afa2ed9281da6c8da6f68d958c4f14a57134fe83f6185deda4f7ab3990d'
 
 ======================================================================
 FAIL: test_every_preparation_setting_invalidates_cache (test_release.ReleaseContractTests.test_every_preparation_setting_invalidates_cache) (key='tokenizer_revision')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 48, in test_every_preparation_setting_invalidates_cache
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 48, in test_every_preparation_setting_invalidates_cache
     config={**self.config,key:value};self.assertNotEqual(old,release.cache_key(self.data,config))
                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: '01bfe440fc2ff568d4b1c760641026a81dcf0b8f52f6f4a329968e8bde6a4138' == '01bfe440fc2ff568d4b1c760641026a81dcf0b8f52f6f4a329968e8bde6a4138'
+AssertionError: '377bebe930ee1e57f9fcc2c525b6cea70c6e7b4bfe5e584de0ae2e0812e7c330' == '377bebe930ee1e57f9fcc2c525b6cea70c6e7b4bfe5e584de0ae2e0812e7c330'
 
 ======================================================================
 FAIL: test_every_preparation_setting_invalidates_cache (test_release.ReleaseContractTests.test_every_preparation_setting_invalidates_cache) (key='template_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 48, in test_every_preparation_setting_invalidates_cache
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 48, in test_every_preparation_setting_invalidates_cache
     config={**self.config,key:value};self.assertNotEqual(old,release.cache_key(self.data,config))
                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: '01bfe440fc2ff568d4b1c760641026a81dcf0b8f52f6f4a329968e8bde6a4138' == '01bfe440fc2ff568d4b1c760641026a81dcf0b8f52f6f4a329968e8bde6a4138'
+AssertionError: '377bebe930ee1e57f9fcc2c525b6cea70c6e7b4bfe5e584de0ae2e0812e7c330' == '377bebe930ee1e57f9fcc2c525b6cea70c6e7b4bfe5e584de0ae2e0812e7c330'
 
 ======================================================================
 FAIL: test_every_preparation_setting_invalidates_cache (test_release.ReleaseContractTests.test_every_preparation_setting_invalidates_cache) (key='max_length')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 48, in test_every_preparation_setting_invalidates_cache
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 48, in test_every_preparation_setting_invalidates_cache
     config={**self.config,key:value};self.assertNotEqual(old,release.cache_key(self.data,config))
                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: '01bfe440fc2ff568d4b1c760641026a81dcf0b8f52f6f4a329968e8bde6a4138' == '01bfe440fc2ff568d4b1c760641026a81dcf0b8f52f6f4a329968e8bde6a4138'
+AssertionError: '377bebe930ee1e57f9fcc2c525b6cea70c6e7b4bfe5e584de0ae2e0812e7c330' == '377bebe930ee1e57f9fcc2c525b6cea70c6e7b4bfe5e584de0ae2e0812e7c330'
 
 ======================================================================
 FAIL: test_every_preparation_setting_invalidates_cache (test_release.ReleaseContractTests.test_every_preparation_setting_invalidates_cache) (key='code_revision')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 48, in test_every_preparation_setting_invalidates_cache
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 48, in test_every_preparation_setting_invalidates_cache
     config={**self.config,key:value};self.assertNotEqual(old,release.cache_key(self.data,config))
                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: '01bfe440fc2ff568d4b1c760641026a81dcf0b8f52f6f4a329968e8bde6a4138' == '01bfe440fc2ff568d4b1c760641026a81dcf0b8f52f6f4a329968e8bde6a4138'
+AssertionError: '377bebe930ee1e57f9fcc2c525b6cea70c6e7b4bfe5e584de0ae2e0812e7c330' == '377bebe930ee1e57f9fcc2c525b6cea70c6e7b4bfe5e584de0ae2e0812e7c330'
 
 ======================================================================
 FAIL: test_failed_atomic_replace_preserves_previous_bytes (test_release.ReleaseContractTests.test_failed_atomic_replace_preserves_previous_bytes)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 105, in test_failed_atomic_replace_preserves_previous_bytes
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 105, in test_failed_atomic_replace_preserves_previous_bytes
     with self.assertRaises(OSError):release.publish(self.manifest,self.report,self.target)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: OSError not raised
@@ -120,7 +120,7 @@ AssertionError: OSError not raised
 FAIL: test_incomplete_false_and_truthy_string_rejected (test_release.ReleaseContractTests.test_incomplete_false_and_truthy_string_rejected) (key='status', value='failed')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 57, in test_incomplete_false_and_truthy_string_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 57, in test_incomplete_false_and_truthy_string_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -129,7 +129,7 @@ AssertionError: ValueError not raised
 FAIL: test_incomplete_false_and_truthy_string_rejected (test_release.ReleaseContractTests.test_incomplete_false_and_truthy_string_rejected) (key='status', value='running')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 57, in test_incomplete_false_and_truthy_string_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 57, in test_incomplete_false_and_truthy_string_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -138,7 +138,7 @@ AssertionError: ValueError not raised
 FAIL: test_incomplete_false_and_truthy_string_rejected (test_release.ReleaseContractTests.test_incomplete_false_and_truthy_string_rejected) (key='passed', value='true')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 57, in test_incomplete_false_and_truthy_string_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 57, in test_incomplete_false_and_truthy_string_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -147,7 +147,7 @@ AssertionError: ValueError not raised
 FAIL: test_incomplete_false_and_truthy_string_rejected (test_release.ReleaseContractTests.test_incomplete_false_and_truthy_string_rejected) (key='evaluation_run_id', value='')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 57, in test_incomplete_false_and_truthy_string_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 57, in test_incomplete_false_and_truthy_string_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -156,7 +156,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_digest_and_schema_rejected (test_release.ReleaseContractTests.test_invalid_digest_and_schema_rejected) (key='schema_version')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
     with self.assertRaises(ValueError):release.validate_release(m,self.report)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -165,7 +165,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_digest_and_schema_rejected (test_release.ReleaseContractTests.test_invalid_digest_and_schema_rejected) (key='schema_version')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
     with self.assertRaises(ValueError):release.validate_release(m,self.report)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -174,7 +174,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_digest_and_schema_rejected (test_release.ReleaseContractTests.test_invalid_digest_and_schema_rejected) (key='model_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
     with self.assertRaises(ValueError):release.validate_release(m,self.report)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -183,7 +183,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_digest_and_schema_rejected (test_release.ReleaseContractTests.test_invalid_digest_and_schema_rejected) (key='model_id')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
     with self.assertRaises(ValueError):release.validate_release(m,self.report)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -192,7 +192,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_digest_and_schema_rejected (test_release.ReleaseContractTests.test_invalid_digest_and_schema_rejected) (key='artifact_uri')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 90, in test_invalid_digest_and_schema_rejected
     with self.assertRaises(ValueError):release.validate_release(m,self.report)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -201,7 +201,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=nan, metric='accuracy')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -210,7 +210,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=nan, metric='format_rate')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -219,7 +219,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=inf, metric='accuracy')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -228,7 +228,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=inf, metric='format_rate')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -237,7 +237,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=-0.1, metric='accuracy')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -246,7 +246,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=-0.1, metric='format_rate')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -255,7 +255,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=1.1, metric='accuracy')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -264,7 +264,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=1.1, metric='format_rate')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -273,7 +273,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=True, metric='accuracy')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -282,7 +282,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=True, metric='format_rate')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -291,7 +291,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value='0.8', metric='accuracy')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -300,7 +300,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value='0.8', metric='format_rate')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -309,7 +309,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=None, metric='accuracy')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -318,7 +318,7 @@ AssertionError: ValueError not raised
 FAIL: test_invalid_metric_rejected (test_release.ReleaseContractTests.test_invalid_metric_rejected) (value=None, metric='format_rate')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 84, in test_invalid_metric_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 84, in test_invalid_metric_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -327,18 +327,18 @@ AssertionError: ValueError not raised
 FAIL: test_key_ignores_path_and_mapping_order (test_release.ReleaseContractTests.test_key_ignores_path_and_mapping_order)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 38, in test_key_ignores_path_and_mapping_order
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 38, in test_key_ignores_path_and_mapping_order
     self.assertEqual(key,release.cache_key(other,dict(reversed(list(self.config.items())))))
-AssertionError: '9454ed2cd3eee7324f4d065f1d3c0441e820af35777b210d9499ed8079b6bfeb' != 'b570cbc415b39050768ba87d031d7581f12860c84979bcc0a7f6a6e55d0e78fc'
-- 9454ed2cd3eee7324f4d065f1d3c0441e820af35777b210d9499ed8079b6bfeb
-+ b570cbc415b39050768ba87d031d7581f12860c84979bcc0a7f6a6e55d0e78fc
+AssertionError: '164dfed72283a55a74edb0300a684229a7bc55739221956c477d94a86c8aabdf' != 'be17b20ce3d78daa28b926af47ab8010a5392deccf17d00352226a5b27e837d8'
+- 164dfed72283a55a74edb0300a684229a7bc55739221956c477d94a86c8aabdf
++ be17b20ce3d78daa28b926af47ab8010a5392deccf17d00352226a5b27e837d8
 
 
 ======================================================================
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='manifest', key='schema_version')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -347,7 +347,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='manifest', key='model_id')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -356,7 +356,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='manifest', key='model_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -365,7 +365,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='manifest', key='protocol_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -374,7 +374,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='manifest', key='golden_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -383,7 +383,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='manifest', key='runtime_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -392,7 +392,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='manifest', key='runtime')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -401,7 +401,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='manifest', key='artifact_uri')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -410,7 +410,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='report', key='status')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -419,7 +419,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='report', key='evaluation_run_id')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -428,7 +428,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='report', key='model_id')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -437,7 +437,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='report', key='model_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -446,7 +446,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='report', key='protocol_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -455,7 +455,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='report', key='golden_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -464,7 +464,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='report', key='runtime_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -473,7 +473,7 @@ AssertionError: ValueError not raised
 FAIL: test_missing_fields_rejected (test_release.ReleaseContractTests.test_missing_fields_rejected) (side='report', key='metrics')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 65, in test_missing_fields_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 65, in test_missing_fields_rejected
     with self.assertRaises(ValueError):release.validate_release(m,r)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -482,7 +482,7 @@ AssertionError: ValueError not raised
 FAIL: test_report_binding_mismatch_rejected (test_release.ReleaseContractTests.test_report_binding_mismatch_rejected) (key='model_id')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -491,7 +491,7 @@ AssertionError: ValueError not raised
 FAIL: test_report_binding_mismatch_rejected (test_release.ReleaseContractTests.test_report_binding_mismatch_rejected) (key='model_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -500,7 +500,7 @@ AssertionError: ValueError not raised
 FAIL: test_report_binding_mismatch_rejected (test_release.ReleaseContractTests.test_report_binding_mismatch_rejected) (key='protocol_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -509,7 +509,7 @@ AssertionError: ValueError not raised
 FAIL: test_report_binding_mismatch_rejected (test_release.ReleaseContractTests.test_report_binding_mismatch_rejected) (key='golden_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -518,7 +518,7 @@ AssertionError: ValueError not raised
 FAIL: test_report_binding_mismatch_rejected (test_release.ReleaseContractTests.test_report_binding_mismatch_rejected) (key='runtime_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 71, in test_report_binding_mismatch_rejected
     with self.assertRaises(ValueError):release.validate_release(self.manifest,bad)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -527,7 +527,7 @@ AssertionError: ValueError not raised
 FAIL: test_runtime_change_with_stale_hash_rejected (test_release.ReleaseContractTests.test_runtime_change_with_stale_hash_rejected) (key='dtype')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 77, in test_runtime_change_with_stale_hash_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 77, in test_runtime_change_with_stale_hash_rejected
     with self.assertRaises(ValueError):release.validate_release(m,self.report)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -536,7 +536,7 @@ AssertionError: ValueError not raised
 FAIL: test_runtime_change_with_stale_hash_rejected (test_release.ReleaseContractTests.test_runtime_change_with_stale_hash_rejected) (key='template_sha256')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 77, in test_runtime_change_with_stale_hash_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 77, in test_runtime_change_with_stale_hash_rejected
     with self.assertRaises(ValueError):release.validate_release(m,self.report)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
@@ -545,12 +545,12 @@ AssertionError: ValueError not raised
 FAIL: test_runtime_change_with_stale_hash_rejected (test_release.ReleaseContractTests.test_runtime_change_with_stale_hash_rejected) (key='generation')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\original-lped78uj\tests\test_release.py", line 77, in test_runtime_change_with_stale_hash_rejected
+  File "C:\Users\1\AppData\Local\Temp\original-wdk8unyy\tests\test_release.py", line 77, in test_runtime_change_with_stale_hash_rejected
     with self.assertRaises(ValueError):release.validate_release(m,self.report)
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AssertionError: ValueError not raised
 
 ----------------------------------------------------------------------
-Ran 13 tests in 0.064s
+Ran 13 tests in 0.032s
 
 FAILED (failures=54)

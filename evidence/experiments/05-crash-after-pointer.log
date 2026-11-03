@@ -1,11 +1,11 @@
-12:28:01.131 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8802
+12:36:59.113 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8828
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-12:28:05.214 | INFO    | Flow run 'cobalt-cheetah' - Beginning flow run 'cobalt-cheetah' for flow 'model-release'
-12:28:05.234 | INFO    | Task run 'prepare_task-c60' - Finished in state Cached(type=COMPLETED)
-12:28:05.249 | INFO    | Flow run 'cobalt-cheetah' - Preparation state=Cached key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
-12:28:05.252 | INFO    | Task run 'artifact_task-bf6' - Finished in state Completed()
-12:28:05.271 | INFO    | Task run 'gate_task-b5d' - Finished in state Completed()
-12:28:05.284 | ERROR   | Task run 'publish_task-d47' - Task run failed with exception: RuntimeError('Injected failure after pointer, before publication journal')
+12:37:02.713 | INFO    | Flow run 'precious-millipede' - Beginning flow run 'precious-millipede' for flow 'model-release'
+12:37:02.728 | INFO    | Task run 'prepare_task-6b2' - Finished in state Cached(type=COMPLETED)
+12:37:02.745 | INFO    | Flow run 'precious-millipede' - Preparation state=Cached key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
+12:37:02.754 | INFO    | Task run 'artifact_task-5ed' - Finished in state Completed()
+12:37:02.759 | INFO    | Task run 'gate_task-eba' - Finished in state Completed()
+12:37:02.770 | ERROR   | Task run 'publish_task-cb6' - Task run failed with exception: RuntimeError('Injected failure after pointer, before publication journal')
 Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1058, in run_context
     yield self
@@ -17,14 +17,14 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 63, in publish_task
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 66, in publish_task
     return commit_release(root, read(decision['manifest_uri']), read(decision['report_uri']),
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\pipeline.py", line 83, in commit_release
     raise RuntimeError('Injected failure after pointer, before publication journal')
 RuntimeError: Injected failure after pointer, before publication journal
-12:28:05.285 | ERROR   | Task run 'publish_task-d47' - Finished in state Failed('Task run encountered an exception RuntimeError: Injected failure after pointer, before publication journal')
-12:28:06.230 | ERROR   | Flow run 'cobalt-cheetah' - Encountered exception during execution: RuntimeError('Injected failure after pointer, before publication journal')
+12:37:02.775 | ERROR   | Task run 'publish_task-cb6' - Finished in state Failed('Task run encountered an exception RuntimeError: Injected failure after pointer, before publication journal')
+12:37:03.728 | ERROR   | Flow run 'precious-millipede' - Encountered exception during execution: RuntimeError('Injected failure after pointer, before publication journal')
 Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
     yield self
@@ -36,7 +36,7 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 79, in release_flow
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 82, in release_flow
     event = publish_task(root, decision, prepared, fail_after_pointer)
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\tasks.py", line 1240, in __call__
@@ -60,15 +60,15 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 63, in publish_task
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 66, in publish_task
     return commit_release(root, read(decision['manifest_uri']), read(decision['report_uri']),
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\pipeline.py", line 83, in commit_release
     raise RuntimeError('Injected failure after pointer, before publication journal')
 RuntimeError: Injected failure after pointer, before publication journal
-12:28:06.275 | INFO    | Flow run 'cobalt-cheetah' - Finished in state Failed('Flow run encountered an exception: RuntimeError: Injected failure after pointer, before publication journal')
+12:37:03.755 | INFO    | Flow run 'precious-millipede' - Finished in state Failed('Flow run encountered an exception: RuntimeError: Injected failure after pointer, before publication journal')
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 95, in <module>
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 98, in <module>
     release_flow(args.workspace, args.manifest, args.report, args.fail_after_prepare, args.fail_after_pointer)
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flows.py", line 1887, in __call__
     return run_flow(
@@ -91,7 +91,7 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 79, in release_flow
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 82, in release_flow
     event = publish_task(root, decision, prepared, fail_after_pointer)
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\tasks.py", line 1240, in __call__
@@ -115,10 +115,10 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 63, in publish_task
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 66, in publish_task
     return commit_release(root, read(decision['manifest_uri']), read(decision['report_uri']),
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\pipeline.py", line 83, in commit_release
     raise RuntimeError('Injected failure after pointer, before publication journal')
 RuntimeError: Injected failure after pointer, before publication journal
-12:28:06.286 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8802
+12:37:03.773 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8828

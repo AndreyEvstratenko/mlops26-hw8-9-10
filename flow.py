@@ -2,6 +2,9 @@
 import argparse
 import os
 from pathlib import Path
+from local_network import configure_loopback
+
+configure_loopback()
 
 ROOT = Path(__file__).resolve().parent
 # Create with normal parent ACL inheritance BEFORE Prefect can create a private home.

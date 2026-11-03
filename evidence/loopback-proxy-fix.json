@@ -1,0 +1,7 @@
+{
+  "probe": "HTTPX GET to an actual loopback HTTP server in the Windows user environment",
+  "before": {"http_status": 503, "requests_received_by_local_server": 0},
+  "after": {"http_status": 200, "requests_received_by_local_server": 1},
+  "fix": "Add loopback addresses to process NO_PROXY before creating HTTP clients",
+  "system_proxy_settings_modified": false
+}

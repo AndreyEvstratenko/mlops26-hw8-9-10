@@ -9,11 +9,13 @@ import time
 import uuid
 from benchmark import request
 from release import digest, read, write
+from local_network import configure_loopback
 
 ROOT = Path(__file__).resolve().parent
 
 
 def run_experiments():
+    configure_loopback()
     out = ROOT / 'evidence' / 'experiments'
     out.mkdir(parents=True, exist_ok=True)
     workspace = ROOT / '.runs' / ('experiments-' + uuid.uuid4().hex[:8])

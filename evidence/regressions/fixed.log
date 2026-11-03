@@ -6,6 +6,6 @@ test_05_http_loaded_version_before_and_after_restart (__main__.IntegrationTests.
 test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 7.780s
+Ran 6 tests in 8.298s
 
 OK

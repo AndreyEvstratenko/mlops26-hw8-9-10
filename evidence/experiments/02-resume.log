@@ -1,11 +1,11 @@
-12:27:38.263 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8740
+12:36:34.970 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8366
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-12:27:41.830 | INFO    | Flow run 'ginger-mongoose' - Beginning flow run 'ginger-mongoose' for flow 'model-release'
-12:27:41.851 | INFO    | Task run 'prepare_task-0f0' - Finished in state Cached(type=COMPLETED)
-12:27:41.866 | INFO    | Flow run 'ginger-mongoose' - Preparation state=Cached key=2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
-12:27:41.873 | INFO    | Task run 'artifact_task-96d' - Finished in state Completed()
-12:27:41.879 | INFO    | Task run 'gate_task-ce3' - Finished in state Completed()
+12:36:39.096 | INFO    | Flow run 'bronze-lizard' - Beginning flow run 'bronze-lizard' for flow 'model-release'
+12:36:39.114 | INFO    | Task run 'prepare_task-3dc' - Finished in state Cached(type=COMPLETED)
+12:36:39.128 | INFO    | Flow run 'bronze-lizard' - Preparation state=Cached key=2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
+12:36:39.134 | INFO    | Task run 'artifact_task-a75' - Finished in state Completed()
+12:36:39.140 | INFO    | Task run 'gate_task-d77' - Finished in state Completed()
 PUBLISHED fixture-B 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e
-12:27:41.898 | INFO    | Task run 'publish_task-1ee' - Finished in state Completed()
-12:27:42.848 | INFO    | Flow run 'ginger-mongoose' - Finished in state Completed()
-12:27:42.869 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8740
+12:36:39.156 | INFO    | Task run 'publish_task-80e' - Finished in state Completed()
+12:36:40.110 | INFO    | Flow run 'bronze-lizard' - Finished in state Completed()
+12:36:40.125 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8366

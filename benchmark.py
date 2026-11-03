@@ -9,6 +9,9 @@ import urllib.error
 import urllib.request
 import uuid
 from release import read, write
+from local_network import configure_loopback
+
+configure_loopback()
 
 
 def request(url, payload=None, timeout=120):

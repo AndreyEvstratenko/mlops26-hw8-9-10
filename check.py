@@ -6,11 +6,13 @@ from pathlib import Path
 import subprocess
 import sys
 import time
+from local_network import configure_loopback
 
 ROOT = Path(__file__).resolve().parent
 
 
 def main():
+    configure_loopback()
     evidence = ROOT / 'evidence' / 'checks'
     evidence.mkdir(parents=True, exist_ok=True)
     started = time.perf_counter()
