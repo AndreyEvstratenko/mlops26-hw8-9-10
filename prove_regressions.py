@@ -16,8 +16,11 @@ def main():
     configure_loopback()
     out = ROOT / 'evidence' / 'regressions'
     out.mkdir(parents=True, exist_ok=True)
-    original = subprocess.check_output(['git', 'rev-list', '--max-parents=0', 'HEAD'], cwd=ROOT).decode().strip()
-    archive = subprocess.check_output(['git', 'archive', '--format=zip', original], cwd=ROOT)
+    # This project can be created by the sandbox account and run by the Windows user.
+    # Trust this resolved repository only for these commands, not in global Git config.
+    git = ['git', '-c', f'safe.directory={ROOT.as_posix()}']
+    original = subprocess.check_output(git + ['rev-list', '--max-parents=0', 'HEAD'], cwd=ROOT).decode().strip()
+    archive = subprocess.check_output(git + ['archive', '--format=zip', original], cwd=ROOT)
     with tempfile.TemporaryDirectory(prefix='original-') as directory:
         with zipfile.ZipFile(io.BytesIO(archive)) as z:
             z.extractall(directory)

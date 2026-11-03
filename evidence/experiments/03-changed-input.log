@@ -1,13 +1,132 @@
-12:36:43.350 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8529
+12:38:47.988 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8759
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-12:36:46.931 | INFO    | Flow run 'worthy-manatee' - Beginning flow run 'worthy-manatee' for flow 'model-release'
-12:36:46.958 | INFO    | Task run 'prepare_task-c35' - Preparing and validating input; no training
+12:38:51.541 | INFO    | Flow run 'spiritual-cricket' - Beginning flow run 'spiritual-cricket' for flow 'model-release'
+12:38:51.573 | INFO    | Task run 'prepare_task-f30' - Preparing and validating input; no training
 PREPARED 2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
-12:36:46.961 | INFO    | Task run 'prepare_task-c35' - Finished in state Completed()
-12:36:46.981 | INFO    | Flow run 'worthy-manatee' - Preparation state=Completed key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
-12:36:46.986 | INFO    | Task run 'artifact_task-490' - Finished in state Completed()
-12:36:46.990 | INFO    | Task run 'gate_task-840' - Finished in state Completed()
+12:38:51.573 | INFO    | Task run 'prepare_task-f30' - Finished in state Completed()
+12:38:51.589 | INFO    | Flow run 'spiritual-cricket' - Preparation state=Completed key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
+12:38:51.604 | INFO    | Task run 'artifact_task-c81' - Finished in state Completed()
+12:38:51.604 | INFO    | Task run 'gate_task-579' - Finished in state Completed()
 ALREADY_PUBLISHED fixture-B 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e
-12:36:47.002 | INFO    | Task run 'publish_task-69e' - Finished in state Completed()
-12:36:47.952 | INFO    | Flow run 'worthy-manatee' - Finished in state Completed()
-12:36:47.971 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8529
+12:38:51.620 | INFO    | Task run 'publish_task-c9a' - Finished in state Completed()
+12:38:51.700 | ERROR   | prefect.server.services.task_run_recorder - Error flushing 1 events (1 to retry, 0 dropped)
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1958, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 258, in execute
+    self._adapt_connection._handle_exception(error)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 412, in _handle_exception
+    self._handle_exception_no_connection(self.dbapi, error)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 237, in _handle_exception_no_connection
+    super()._handle_exception_no_connection(dbapi, error)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 409, in _handle_exception_no_connection
+    raise error.with_traceback(exc_info[2])
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 256, in execute
+    return await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 167, in await_
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 205, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 279, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: task_run_state.task_run_id, task_run_state.timestamp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 643, in flush
+    await record_bulk_task_run_events([item.event for item in batch])
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 356, in record_bulk_task_run_events
+    await _record_bulk_task_run_events(events)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 613, in _record_bulk_task_run_events
+    await _insert_task_run_states(session, [tr.task_run for tr in all_task_runs])
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 244, in _insert_task_run_states
+    await session.execute(
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 651, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 212, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2473, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2363, in _execute_internal
+    compile_state_cls.orm_execute_statement(
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 1341, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1463, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 533, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1683, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1837, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1977, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2347, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1958, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 258, in execute
+    self._adapt_connection._handle_exception(error)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 412, in _handle_exception
+    self._handle_exception_no_connection(self.dbapi, error)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 237, in _handle_exception_no_connection
+    super()._handle_exception_no_connection(dbapi, error)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 409, in _handle_exception_no_connection
+    raise error.with_traceback(exc_info[2])
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 256, in execute
+    return await_(self._execute_async(operation, parameters))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 167, in await_
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 205, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 279, in _execute_async
+    result = await self._cursor.execute(operation, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: task_run_state.task_run_id, task_run_state.timestamp
+[SQL: INSERT INTO task_run_state (task_run_id, type, timestamp, name, message, state_details, data, id, created, updated) VALUES (:task_run_id_m0, :type_m0, :timestamp_m0, :name_m0, :message_m0, :state_details_m0, :data_m0, :id_m0, :created_m0, :updated) ON CONFLICT (id) DO NOTHING]
+[parameters: {'task_run_id_m0': '01a1a0c6-9654-72ec-a15e-a4c54015800e', 'type_m0': 'COMPLETED', 'timestamp_m0': '2026-11-03 09:38:51.604953', 'name_m0': 'Completed', 'message_m0': '', 'state_details_m0': '{"flow_run_id": "e0245721-adcb-4cd6-8b94-b75347e9a8ce", "task_run_id": "01a1a0c6-9654-72ec-a15e-a4c54015800e", "child_flow_run_id": null, "scheduled_ ... (206 characters truncated) ... esh_cache": null, "retriable": null, "transition_id": null, "task_parameters_id": null, "traceparent": null, "deployment_concurrency_lease_id": null}', 'data_m0': None, 'id_m0': '01a1a0c6-9654-7fcc-925c-7187a39f3413', 'created_m0': '2026-11-03 09:38:51.700409', 'updated': '2026-11-03 09:38:51.700409'}]
+(Background on this error at: https://sqlalche.me/e/21/gkpj)
+12:38:52.570 | INFO    | Flow run 'spiritual-cricket' - Finished in state Completed()
+12:38:52.593 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8759

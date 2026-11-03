@@ -4,18 +4,18 @@ test_03_repeat_has_one_publication (test_integration.IntegrationTests.test_03_re
 test_04_http_not_ready_during_warmup (test_integration.IntegrationTests.test_04_http_not_ready_during_warmup) ... ok
 test_05_http_loaded_version_before_and_after_restart (test_integration.IntegrationTests.test_05_http_loaded_version_before_and_after_restart) ... ok
 test_06_http_invalid_requests_never_call_backend (test_integration.IntegrationTests.test_06_http_invalid_requests_never_call_backend) ... ok
-test_artifact_tamper_rejected_before_pointer (test_recovery.RecoveryTests.test_artifact_tamper_rejected_before_pointer) ... Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmpq0hu4rk8\workspace
+test_artifact_tamper_rejected_before_pointer (test_recovery.RecoveryTests.test_artifact_tamper_rejected_before_pointer) ... Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmpaoh94bt_\workspace
 PREPARED 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
 ok
-test_changed_runtime_and_eval_get_distinct_release_ids (test_recovery.RecoveryTests.test_changed_runtime_and_eval_get_distinct_release_ids) ... Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmpll1rym2h\workspace
+test_changed_runtime_and_eval_get_distinct_release_ids (test_recovery.RecoveryTests.test_changed_runtime_and_eval_get_distinct_release_ids) ... Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmp8dqq313i\workspace
 PREPARED 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
 PUBLISHED fixture-B 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e
 CACHE_HIT 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
 PUBLISHED fixture-B c5e38ea0c699ad867f7d40020e779ac286135a3ab5a844d2e940e9923172e9e1
 ok
 test_disk_replace_failure_preserves_pointer_and_cleans_temp (test_recovery.RecoveryTests.test_disk_replace_failure_preserves_pointer_and_cleans_temp) ... ok
-test_pointer_journal_crash_reconciled_once (test_recovery.RecoveryTests.test_pointer_journal_crash_reconciled_once) ... Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmpdizmz130\workspace
-Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmpjarylkuj\workspace
+test_pointer_journal_crash_reconciled_once (test_recovery.RecoveryTests.test_pointer_journal_crash_reconciled_once) ... Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmpu18wjvho\workspace
+Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmpbnrx5u6b\workspace
 PREPARED 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
 CACHE_HIT 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
 RECOVERED_PUBLICATION 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e
@@ -23,7 +23,7 @@ ALREADY_PUBLISHED fixture-B 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f
 CACHE_HIT 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
 ALREADY_PUBLISHED fixture-B 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e
 ok
-test_rollback_uses_previous_valid_report (test_recovery.RecoveryTests.test_rollback_uses_previous_valid_report) ... Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmppzjmr6i7\workspace
+test_rollback_uses_previous_valid_report (test_recovery.RecoveryTests.test_rollback_uses_previous_valid_report) ... Initialized STUB ONLY workspace: C:\Users\1\AppData\Local\Temp\tmp4jio4a8z\workspace
 PREPARED 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
 PUBLISHED fixture-B 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e
 CACHE_HIT 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
@@ -44,6 +44,6 @@ test_report_binding_mismatch_rejected (test_release.ReleaseContractTests.test_re
 test_runtime_change_with_stale_hash_rejected (test_release.ReleaseContractTests.test_runtime_change_with_stale_hash_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 7.393s
+Ran 24 tests in 7.391s
 
 OK

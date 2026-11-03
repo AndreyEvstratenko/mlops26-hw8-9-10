@@ -1,11 +1,11 @@
-12:36:27.150 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8877
+12:38:33.363 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8338
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-12:36:30.744 | INFO    | Flow run 'crafty-wolverine' - Beginning flow run 'crafty-wolverine' for flow 'model-release'
-12:36:30.762 | INFO    | Task run 'prepare_task-e06' - Preparing and validating input; no training
+12:38:36.978 | INFO    | Flow run 'maroon-cuckoo' - Beginning flow run 'maroon-cuckoo' for flow 'model-release'
+12:38:36.994 | INFO    | Task run 'prepare_task-67f' - Preparing and validating input; no training
 PREPARED 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
-12:36:30.772 | INFO    | Task run 'prepare_task-e06' - Finished in state Completed()
-12:36:30.786 | INFO    | Flow run 'crafty-wolverine' - Preparation state=Completed key=2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
-12:36:31.761 | ERROR   | Flow run 'crafty-wolverine' - Encountered exception during execution: RuntimeError('Injected failure after preparation')
+12:38:37.000 | INFO    | Task run 'prepare_task-67f' - Finished in state Completed()
+12:38:37.015 | INFO    | Flow run 'maroon-cuckoo' - Preparation state=Completed key=2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
+12:38:37.994 | ERROR   | Flow run 'maroon-cuckoo' - Encountered exception during execution: RuntimeError('Injected failure after preparation')
 Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
     yield self
@@ -20,7 +20,7 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 79, in release_flow
     raise RuntimeError('Injected failure after preparation')
 RuntimeError: Injected failure after preparation
-12:36:31.788 | INFO    | Flow run 'crafty-wolverine' - Finished in state Failed('Flow run encountered an exception: RuntimeError: Injected failure after preparation')
+12:38:38.032 | INFO    | Flow run 'maroon-cuckoo' - Finished in state Failed('Flow run encountered an exception: RuntimeError: Injected failure after preparation')
 Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 98, in <module>
     release_flow(args.workspace, args.manifest, args.report, args.fail_after_prepare, args.fail_after_pointer)
@@ -48,4 +48,4 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 79, in release_flow
     raise RuntimeError('Injected failure after preparation')
 RuntimeError: Injected failure after preparation
-12:36:31.794 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8877
+12:38:38.048 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8338
