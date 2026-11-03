@@ -24,7 +24,7 @@ test_protocol_or_raw_changes_rejected (test_pipeline.PipelineContract.test_proto
 test_refused_candidate_keeps_alias (test_pipeline.PipelineContract.test_refused_candidate_keeps_alias) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 0.079s
+Ran 24 tests in 0.075s
 
 OK
 Отчёты и сырые ответы сохранены. Далее: make eval; только после PASS - make promote

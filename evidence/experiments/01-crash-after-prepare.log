@@ -1,51 +1,51 @@
-12:38:33.363 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8338
+13:35:02.959 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8168
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-12:38:36.978 | INFO    | Flow run 'maroon-cuckoo' - Beginning flow run 'maroon-cuckoo' for flow 'model-release'
-12:38:36.994 | INFO    | Task run 'prepare_task-67f' - Preparing and validating input; no training
+13:35:08.189 | INFO    | Flow run 'solid-collie' - Beginning flow run 'solid-collie' for flow 'model-release'
+13:35:08.222 | INFO    | Task run 'prepare_task-495' - Preparing and validating input; no training
 PREPARED 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
-12:38:37.000 | INFO    | Task run 'prepare_task-67f' - Finished in state Completed()
-12:38:37.015 | INFO    | Flow run 'maroon-cuckoo' - Preparation state=Completed key=2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
-12:38:37.994 | ERROR   | Flow run 'maroon-cuckoo' - Encountered exception during execution: RuntimeError('Injected failure after preparation')
+13:35:08.232 | INFO    | Task run 'prepare_task-495' - Finished in state Completed()
+13:35:08.245 | INFO    | Flow run 'solid-collie' - Preparation state=Completed key=2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
+13:35:09.210 | ERROR   | Flow run 'solid-collie' - Encountered exception during execution: RuntimeError('Injected failure after preparation')
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
     yield self
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2133, in run_flow_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2133, in run_flow_sync
     engine.call_flow_fn()
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1361, in call_flow_fn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1361, in call_flow_fn
     result = call_with_parameters(self.flow.fn, self.parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 79, in release_flow
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 79, in release_flow
     raise RuntimeError('Injected failure after preparation')
 RuntimeError: Injected failure after preparation
-12:38:38.032 | INFO    | Flow run 'maroon-cuckoo' - Finished in state Failed('Flow run encountered an exception: RuntimeError: Injected failure after preparation')
+13:35:09.246 | INFO    | Flow run 'solid-collie' - Finished in state Failed('Flow run encountered an exception: RuntimeError: Injected failure after preparation')
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 98, in <module>
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 98, in <module>
     release_flow(args.workspace, args.manifest, args.report, args.fail_after_prepare, args.fail_after_pointer)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flows.py", line 1887, in __call__
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flows.py", line 1887, in __call__
     return run_flow(
            ^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2290, in run_flow
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2290, in run_flow
     ret_val = run_flow_sync(**kwargs)
               ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2135, in run_flow_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2135, in run_flow_sync
     return engine.state if return_type == "state" else engine.result()
                                                        ^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 788, in result
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 788, in result
     raise self._raised
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
     yield self
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2133, in run_flow_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2133, in run_flow_sync
     engine.call_flow_fn()
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1361, in call_flow_fn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1361, in call_flow_fn
     result = call_with_parameters(self.flow.fn, self.parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 79, in release_flow
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 79, in release_flow
     raise RuntimeError('Injected failure after preparation')
 RuntimeError: Injected failure after preparation
-12:38:38.048 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8338
+13:35:09.264 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8168

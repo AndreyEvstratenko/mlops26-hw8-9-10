@@ -1,62 +1,62 @@
-12:39:17.409 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8926
+13:35:53.288 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8302
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-12:39:21.026 | INFO    | Flow run 'versatile-beagle' - Beginning flow run 'versatile-beagle' for flow 'model-release'
-12:39:21.052 | INFO    | Task run 'prepare_task-9e1' - Finished in state Cached(type=COMPLETED)
-12:39:21.062 | INFO    | Flow run 'versatile-beagle' - Preparation state=Cached key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
-12:39:21.073 | INFO    | Task run 'artifact_task-b4e' - Finished in state Completed()
-12:39:21.073 | ERROR   | Task run 'gate_task-d17' - Task run failed with exception: ValueError('Incomplete evaluation or quality rejection')
+13:35:56.895 | INFO    | Flow run 'cherry-dove' - Beginning flow run 'cherry-dove' for flow 'model-release'
+13:35:56.915 | INFO    | Task run 'prepare_task-7e8' - Finished in state Cached(type=COMPLETED)
+13:35:56.929 | INFO    | Flow run 'cherry-dove' - Preparation state=Cached key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
+13:35:56.933 | INFO    | Task run 'artifact_task-1ff' - Finished in state Completed()
+13:35:56.935 | ERROR   | Task run 'gate_task-a59' - Task run failed with exception: ValueError('Incomplete evaluation or quality rejection')
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1058, in run_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1058, in run_context
     yield self
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1755, in run_task_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1755, in run_task_sync
     engine.call_task_fn(txn)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1075, in call_task_fn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1075, in call_task_fn
     result = call_with_parameters(self.task.fn, parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
     validate_release(manifest, report)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
+  File "D:\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
     raise ValueError('Incomplete evaluation or quality rejection')
 ValueError: Incomplete evaluation or quality rejection
-12:39:21.073 | ERROR   | Task run 'gate_task-d17' - Finished in state Failed('Task run encountered an exception ValueError: Incomplete evaluation or quality rejection')
-12:39:21.121 | ERROR   | prefect.server.services.task_run_recorder - Error flushing 1 events (1 to retry, 0 dropped)
+13:35:56.935 | ERROR   | Task run 'gate_task-a59' - Finished in state Failed('Task run encountered an exception ValueError: Incomplete evaluation or quality rejection')
+13:35:56.999 | ERROR   | prefect.server.services.task_run_recorder - Error flushing 1 events (1 to retry, 0 dropped)
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1958, in _exec_single_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1958, in _exec_single_context
     self.dialect.do_execute(
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
     cursor.execute(statement, parameters)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 258, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 258, in execute
     self._adapt_connection._handle_exception(error)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 412, in _handle_exception
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 412, in _handle_exception
     self._handle_exception_no_connection(self.dbapi, error)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 237, in _handle_exception_no_connection
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 237, in _handle_exception_no_connection
     super()._handle_exception_no_connection(dbapi, error)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 409, in _handle_exception_no_connection
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 409, in _handle_exception_no_connection
     raise error.with_traceback(exc_info[2])
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 256, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 256, in execute
     return await_(self._execute_async(operation, parameters))
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 167, in await_
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 167, in await_
     return current.parent.switch(awaitable)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 205, in greenlet_spawn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 205, in greenlet_spawn
     value = await result
             ^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 279, in _execute_async
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 279, in _execute_async
     result = await self._cursor.execute(operation, parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 40, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 40, in execute
     await self._execute(self._cursor.execute, sql, parameters)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 32, in _execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 32, in _execute
     return await self._conn._execute(fn, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
     return await future
            ^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
     result = function()
              ^^^^^^^^^^
 sqlite3.IntegrityError: UNIQUE constraint failed: task_run_state.task_run_id, task_run_state.timestamp
@@ -64,176 +64,176 @@ sqlite3.IntegrityError: UNIQUE constraint failed: task_run_state.task_run_id, ta
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 643, in flush
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 643, in flush
     await record_bulk_task_run_events([item.event for item in batch])
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 356, in record_bulk_task_run_events
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 356, in record_bulk_task_run_events
     await _record_bulk_task_run_events(events)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 613, in _record_bulk_task_run_events
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 613, in _record_bulk_task_run_events
     await _insert_task_run_states(session, [tr.task_run for tr in all_task_runs])
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 244, in _insert_task_run_states
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\server\services\task_run_recorder.py", line 244, in _insert_task_run_states
     await session.execute(
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 651, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 651, in execute
     result = await greenlet_spawn(
              ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 212, in greenlet_spawn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 212, in greenlet_spawn
     result = context.switch(value)
              ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2473, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2473, in execute
     return self._execute_internal(
            ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2363, in _execute_internal
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2363, in _execute_internal
     compile_state_cls.orm_execute_statement(
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 1341, in orm_execute_statement
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\orm\bulk_persistence.py", line 1341, in orm_execute_statement
     result = conn.execute(
              ^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1463, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1463, in execute
     return meth(
            ^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 533, in _execute_on_connection
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 533, in _execute_on_connection
     return connection._execute_clauseelement(
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1683, in _execute_clauseelement
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1683, in _execute_clauseelement
     ret = self._execute_context(
           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1837, in _execute_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1837, in _execute_context
     return self._exec_single_context(
            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1977, in _exec_single_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1977, in _exec_single_context
     self._handle_dbapi_exception(
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2347, in _handle_dbapi_exception
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2347, in _handle_dbapi_exception
     raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1958, in _exec_single_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1958, in _exec_single_context
     self.dialect.do_execute(
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 1192, in do_execute
     cursor.execute(statement, parameters)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 258, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 258, in execute
     self._adapt_connection._handle_exception(error)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 412, in _handle_exception
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 412, in _handle_exception
     self._handle_exception_no_connection(self.dbapi, error)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 237, in _handle_exception_no_connection
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 237, in _handle_exception_no_connection
     super()._handle_exception_no_connection(dbapi, error)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 409, in _handle_exception_no_connection
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 409, in _handle_exception_no_connection
     raise error.with_traceback(exc_info[2])
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 256, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 256, in execute
     return await_(self._execute_async(operation, parameters))
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 167, in await_
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 167, in await_
     return current.parent.switch(awaitable)  # type: ignore[no-any-return]
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 205, in greenlet_spawn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\util\concurrency.py", line 205, in greenlet_spawn
     value = await result
             ^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 279, in _execute_async
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\sqlalchemy\connectors\asyncio.py", line 279, in _execute_async
     result = await self._cursor.execute(operation, parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 40, in execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 40, in execute
     await self._execute(self._cursor.execute, sql, parameters)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 32, in _execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\cursor.py", line 32, in _execute
     return await self._conn._execute(fn, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 160, in _execute
     return await future
            ^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\aiosqlite\core.py", line 63, in _connection_worker_thread
     result = function()
              ^^^^^^^^^^
 sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: task_run_state.task_run_id, task_run_state.timestamp
 [SQL: INSERT INTO task_run_state (task_run_id, type, timestamp, name, message, state_details, data, id, created, updated) VALUES (:task_run_id_m0, :type_m0, :timestamp_m0, :name_m0, :message_m0, :state_details_m0, :data_m0, :id_m0, :created_m0, :updated) ON CONFLICT (id) DO NOTHING]
-[parameters: {'task_run_id_m0': '01a1a0c7-0971-7eae-9876-85ff2654cbe2', 'type_m0': 'FAILED', 'timestamp_m0': '2026-11-03 09:39:21.073598', 'name_m0': 'Failed', 'message_m0': 'Task run encountered an exception ValueError: Incomplete evaluation or quality rejection', 'state_details_m0': '{"flow_run_id": "98ca324e-5422-475d-b132-026cfa03678f", "task_run_id": "01a1a0c7-0971-7eae-9876-85ff2654cbe2", "child_flow_run_id": null, "scheduled_ ... (207 characters truncated) ... sh_cache": null, "retriable": false, "transition_id": null, "task_parameters_id": null, "traceparent": null, "deployment_concurrency_lease_id": null}', 'data_m0': None, 'id_m0': '01a1a0c7-0971-7c52-9aab-d04c004aee20', 'created_m0': '2026-11-03 09:39:21.121204', 'updated': '2026-11-03 09:39:21.121204'}]
+[parameters: {'task_run_id_m0': '01a1a0fa-da87-7e64-8c89-1d8a1eed059a', 'type_m0': 'FAILED', 'timestamp_m0': '2026-11-03 10:35:56.935412', 'name_m0': 'Failed', 'message_m0': 'Task run encountered an exception ValueError: Incomplete evaluation or quality rejection', 'state_details_m0': '{"flow_run_id": "5fc67032-153d-4e36-8001-37141ee0b6a9", "task_run_id": "01a1a0fa-da87-7e64-8c89-1d8a1eed059a", "child_flow_run_id": null, "scheduled_ ... (207 characters truncated) ... sh_cache": null, "retriable": false, "transition_id": null, "task_parameters_id": null, "traceparent": null, "deployment_concurrency_lease_id": null}', 'data_m0': None, 'id_m0': '01a1a0fa-da87-76c3-9402-fd125cc85da0', 'created_m0': '2026-11-03 10:35:56.995672', 'updated': '2026-11-03 10:35:56.995672'}]
 (Background on this error at: https://sqlalche.me/e/21/gkpj)
-12:39:22.050 | ERROR   | Flow run 'versatile-beagle' - Encountered exception during execution: ValueError('Incomplete evaluation or quality rejection')
+13:35:57.913 | ERROR   | Flow run 'cherry-dove' - Encountered exception during execution: ValueError('Incomplete evaluation or quality rejection')
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
     yield self
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2133, in run_flow_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2133, in run_flow_sync
     engine.call_flow_fn()
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1361, in call_flow_fn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1361, in call_flow_fn
     result = call_with_parameters(self.flow.fn, self.parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 81, in release_flow
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 81, in release_flow
     decision = gate_task(root, artifact, report_name)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\tasks.py", line 1240, in __call__
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\tasks.py", line 1240, in __call__
     return run_task(
            ^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1988, in run_task
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1988, in run_task
     return run_task_sync(**kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1758, in run_task_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1758, in run_task_sync
     return engine.state if return_type == "state" else engine.result()
                                                        ^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 622, in result
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 622, in result
     raise self._raised
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1058, in run_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1058, in run_context
     yield self
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1755, in run_task_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1755, in run_task_sync
     engine.call_task_fn(txn)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1075, in call_task_fn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1075, in call_task_fn
     result = call_with_parameters(self.task.fn, parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
     validate_release(manifest, report)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
+  File "D:\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
     raise ValueError('Incomplete evaluation or quality rejection')
 ValueError: Incomplete evaluation or quality rejection
-12:39:22.070 | INFO    | Flow run 'versatile-beagle' - Finished in state Failed('Flow run encountered an exception: ValueError: Incomplete evaluation or quality rejection')
+13:35:57.939 | INFO    | Flow run 'cherry-dove' - Finished in state Failed('Flow run encountered an exception: ValueError: Incomplete evaluation or quality rejection')
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 98, in <module>
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 98, in <module>
     release_flow(args.workspace, args.manifest, args.report, args.fail_after_prepare, args.fail_after_pointer)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flows.py", line 1887, in __call__
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flows.py", line 1887, in __call__
     return run_flow(
            ^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2290, in run_flow
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2290, in run_flow
     ret_val = run_flow_sync(**kwargs)
               ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2135, in run_flow_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2135, in run_flow_sync
     return engine.state if return_type == "state" else engine.result()
                                                        ^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 788, in result
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 788, in result
     raise self._raised
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
     yield self
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2133, in run_flow_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 2133, in run_flow_sync
     engine.call_flow_fn()
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1361, in call_flow_fn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1361, in call_flow_fn
     result = call_with_parameters(self.flow.fn, self.parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 81, in release_flow
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 81, in release_flow
     decision = gate_task(root, artifact, report_name)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\tasks.py", line 1240, in __call__
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\tasks.py", line 1240, in __call__
     return run_task(
            ^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1988, in run_task
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1988, in run_task
     return run_task_sync(**kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1758, in run_task_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1758, in run_task_sync
     return engine.state if return_type == "state" else engine.result()
                                                        ^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 622, in result
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 622, in result
     raise self._raised
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1058, in run_context
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1058, in run_context
     yield self
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1755, in run_task_sync
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1755, in run_task_sync
     engine.call_task_fn(txn)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1075, in call_task_fn
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\task_engine.py", line 1075, in call_task_fn
     result = call_with_parameters(self.task.fn, parameters)
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
+  File "D:\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
+  File "D:\mlops26-hw8-9-10-solution\flow.py", line 55, in gate_task
     validate_release(manifest, report)
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
+  File "D:\mlops26-hw8-9-10-solution\release.py", line 76, in validate_release
     raise ValueError('Incomplete evaluation or quality rejection')
 ValueError: Incomplete evaluation or quality rejection
-12:39:22.085 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8926
+13:35:57.963 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8302

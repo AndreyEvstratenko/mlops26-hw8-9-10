@@ -1,11 +1,11 @@
 {
   "original": {
     "exit_code": 1,
-    "target": "C:\\Users\\1\\AppData\\Local\\Temp\\original-tt_5xlfu"
+    "target": "C:\\Users\\1\\AppData\\Local\\Temp\\original-uu84cu0z"
   },
   "fixed": {
     "exit_code": 0,
-    "target": "C:\\Users\\1\\Documents\\Codex\\2026-11-01\\8-9\\outputs\\mlops26-hw8-9-10-solution"
+    "target": "D:\\mlops26-hw8-9-10-solution"
   },
   "original_commit": "6a91b1941a484f848fdc0942042b76d070e566f8",
   "six_assertion_failures_verified": true,

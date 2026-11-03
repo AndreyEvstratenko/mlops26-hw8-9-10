@@ -1,7 +1,7 @@
-{"attempt_id":"69f87881-c53f-4337-9de2-d67e41dedeaf","error":"RuntimeError: Injected failure after preparation","status":"failed"}
-{"attempt_id":"faafe850-1a06-48ac-bb49-879bf219ef26","release_id":"9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e","status":"complete"}
-{"attempt_id":"f9e8ccc8-0804-44dd-bb73-5fd6ca5fa7af","release_id":"9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e","status":"complete"}
-{"attempt_id":"a8a4e10b-bcea-4d8a-801a-792782630016","release_id":"9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e","status":"complete"}
-{"attempt_id":"52ae9560-acf4-4527-9c99-2bd43339b0f5","error":"RuntimeError: Injected failure after pointer, before publication journal","status":"failed"}
-{"attempt_id":"560f612c-9d54-43aa-9b45-3de006ac30fb","release_id":"8c6620209813c3ecec31f0c8639ae0ff11612080d2fcb4f76f7b9e2e240870f4","status":"complete"}
-{"attempt_id":"a15d4d73-df44-4257-a048-5a34e96d3b33","error":"ValueError: Incomplete evaluation or quality rejection","status":"failed"}
+{"attempt_id":"32f59211-7ade-448e-8b0f-8ae398555654","error":"RuntimeError: Injected failure after preparation","status":"failed"}
+{"attempt_id":"6bae45b6-88b4-4205-8a84-6eabc59f95f2","release_id":"9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e","status":"complete"}
+{"attempt_id":"cae5c225-660c-4957-8ad9-f706721cf1f4","release_id":"9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e","status":"complete"}
+{"attempt_id":"ad7de036-43ca-49b5-88ca-f5828d902a3f","release_id":"9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e","status":"complete"}
+{"attempt_id":"a7cade77-3509-46fb-be5c-e3ddfb39854e","error":"RuntimeError: Injected failure after pointer, before publication journal","status":"failed"}
+{"attempt_id":"5aa659a2-819a-47ca-ae5c-bdc1b20603cb","release_id":"8c6620209813c3ecec31f0c8639ae0ff11612080d2fcb4f76f7b9e2e240870f4","status":"complete"}
+{"attempt_id":"34e4f5d0-0607-4aeb-a604-78561bd7f08d","error":"ValueError: Incomplete evaluation or quality rejection","status":"failed"}
