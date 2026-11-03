@@ -4,6 +4,8 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+# Create with normal parent ACL inheritance BEFORE Prefect can create a private home.
+# An existing home from older runs may need its ACL inheritance restored on Windows.
 (ROOT / '.prefect').mkdir(exist_ok=True)
 (ROOT / '.runs' / 'tmp').mkdir(parents=True, exist_ok=True)
 os.environ.setdefault('PREFECT_HOME', str(ROOT / '.prefect'))

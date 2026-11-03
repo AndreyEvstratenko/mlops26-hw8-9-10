@@ -1,12 +1,12 @@
-11:25:46.067 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8537
+12:28:09.431 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8925
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-11:25:49.627 | INFO    | Flow run 'comical-mole' - Beginning flow run 'comical-mole' for flow 'model-release'
-11:25:49.645 | INFO    | Task run 'prepare_task-90e' - Finished in state Cached(type=COMPLETED)
-11:25:49.659 | INFO    | Flow run 'comical-mole' - Preparation state=Cached key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
-11:25:49.667 | INFO    | Task run 'artifact_task-75b' - Finished in state Completed()
-11:25:49.673 | INFO    | Task run 'gate_task-4c5' - Finished in state Completed()
+12:28:13.052 | INFO    | Flow run 'humorous-pudu' - Beginning flow run 'humorous-pudu' for flow 'model-release'
+12:28:13.079 | INFO    | Task run 'prepare_task-cd1' - Finished in state Cached(type=COMPLETED)
+12:28:13.085 | INFO    | Flow run 'humorous-pudu' - Preparation state=Cached key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
+12:28:13.102 | INFO    | Task run 'artifact_task-d12' - Finished in state Completed()
+12:28:13.107 | INFO    | Task run 'gate_task-bca' - Finished in state Completed()
 RECOVERED_PUBLICATION 8c6620209813c3ecec31f0c8639ae0ff11612080d2fcb4f76f7b9e2e240870f4
 ALREADY_PUBLISHED fixture-B 8c6620209813c3ecec31f0c8639ae0ff11612080d2fcb4f76f7b9e2e240870f4
-11:25:49.692 | INFO    | Task run 'publish_task-8a1' - Finished in state Completed()
-11:25:50.642 | INFO    | Flow run 'comical-mole' - Finished in state Completed()
-11:25:50.671 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8537
+12:28:13.123 | INFO    | Task run 'publish_task-226' - Finished in state Completed()
+12:28:14.076 | INFO    | Flow run 'humorous-pudu' - Finished in state Completed()
+12:28:14.101 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8925

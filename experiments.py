@@ -25,6 +25,7 @@ def run_experiments():
                                 stderr=subprocess.STDOUT, encoding='utf-8', timeout=150)
         (out / f'{label}.log').write_text(result.stdout, encoding='utf-8')
         recorded.append({'label': label, 'command': command, 'exit_code': result.returncode})
+        write(out / 'commands.json', recorded)
         print(label, 'exit:', result.returncode, flush=True)
         if (result.returncode == 0) != success:
             raise RuntimeError(f'Unexpected result: {label}; see evidence/experiments/{label}.log')
@@ -32,7 +33,12 @@ def run_experiments():
     call('00-init', 'lab.py', ['--workspace', workspace, 'init'])
     common = ['--workspace', workspace]
     log = call('01-crash-after-prepare', 'flow.py', common + ['--fail-after-prepare'], False)
-    assert 'Injected failure after preparation' in log and 'PREPARED' in log
+    if 'Injected failure after preparation' not in log or 'PREPARED' not in log:
+        tail = '\n'.join(log.splitlines()[-18:])
+        raise RuntimeError(
+            'Flow failed before the planned preparation failure. '
+            'See evidence/experiments/01-crash-after-prepare.log. '
+            'If SQLite reports unable to open database file, check access to the project .prefect folder.\n' + tail)
     log = call('02-resume', 'flow.py', common)
     assert 'Preparation state=Cached' in log
     with (workspace / 'input.txt').open('ab') as stream:

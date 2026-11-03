@@ -1,11 +1,11 @@
-11:25:05.268 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8017
+12:27:30.547 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8713
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-11:25:09.379 | INFO    | Flow run 'golden-tody' - Beginning flow run 'golden-tody' for flow 'model-release'
-11:25:09.404 | INFO    | Task run 'prepare_task-394' - Preparing and validating input; no training
-PREPARED 6fd1dabaf99d9247fd09cfd62a8b7f8c1868d8f6e5f5d6109663b658edb88ccf
-11:25:09.412 | INFO    | Task run 'prepare_task-394' - Finished in state Completed()
-11:25:09.428 | INFO    | Flow run 'golden-tody' - Preparation state=Completed key=6fd1dabaf99d9247fd09cfd62a8b7f8c1868d8f6e5f5d6109663b658edb88ccf
-11:25:10.402 | ERROR   | Flow run 'golden-tody' - Encountered exception during execution: RuntimeError('Injected failure after preparation')
+12:27:34.152 | INFO    | Flow run 'hypersonic-stork' - Beginning flow run 'hypersonic-stork' for flow 'model-release'
+12:27:34.174 | INFO    | Task run 'prepare_task-2ec' - Preparing and validating input; no training
+PREPARED 2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
+12:27:34.185 | INFO    | Task run 'prepare_task-2ec' - Finished in state Completed()
+12:27:34.196 | INFO    | Flow run 'hypersonic-stork' - Preparation state=Completed key=2f8a3968e75cd59e138c848321e88442ca50d5d6a7a38a46b773919212621a70
+12:27:35.172 | ERROR   | Flow run 'hypersonic-stork' - Encountered exception during execution: RuntimeError('Injected failure after preparation')
 Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flow_engine.py", line 1339, in run_context
     yield self
@@ -17,12 +17,12 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 72, in release_flow
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 76, in release_flow
     raise RuntimeError('Injected failure after preparation')
 RuntimeError: Injected failure after preparation
-11:25:10.445 | INFO    | Flow run 'golden-tody' - Finished in state Failed('Flow run encountered an exception: RuntimeError: Injected failure after preparation')
+12:27:35.215 | INFO    | Flow run 'hypersonic-stork' - Finished in state Failed('Flow run encountered an exception: RuntimeError: Injected failure after preparation')
 Traceback (most recent call last):
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 91, in <module>
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 95, in <module>
     release_flow(args.workspace, args.manifest, args.report, args.fail_after_prepare, args.fail_after_pointer)
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\flows.py", line 1887, in __call__
     return run_flow(
@@ -45,7 +45,7 @@ Traceback (most recent call last):
   File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\.venv\Lib\site-packages\prefect\utilities\callables\__init__.py", line 404, in call_with_parameters
     return fn(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 72, in release_flow
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\flow.py", line 76, in release_flow
     raise RuntimeError('Injected failure after preparation')
 RuntimeError: Injected failure after preparation
-11:25:10.461 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8017
+12:27:35.230 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8713

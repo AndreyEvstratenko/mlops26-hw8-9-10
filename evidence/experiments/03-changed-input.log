@@ -1,13 +1,13 @@
-11:25:21.701 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8418
+12:27:45.819 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8592
 See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
-11:25:25.801 | INFO    | Flow run 'indigo-wallaby' - Beginning flow run 'indigo-wallaby' for flow 'model-release'
-11:25:25.812 | INFO    | Task run 'prepare_task-a97' - Preparing and validating input; no training
-PREPARED e0f6825e1c3abd98073d8551d204e0105d3a5536d9d158b1477af25516cd0c30
-11:25:25.829 | INFO    | Task run 'prepare_task-a97' - Finished in state Completed()
-11:25:25.844 | INFO    | Flow run 'indigo-wallaby' - Preparation state=Completed key=e0f6825e1c3abd98073d8551d204e0105d3a5536d9d158b1477af25516cd0c30
-11:25:25.848 | INFO    | Task run 'artifact_task-580' - Finished in state Completed()
-11:25:25.857 | INFO    | Task run 'gate_task-43b' - Finished in state Completed()
+12:27:49.451 | INFO    | Flow run 'merciful-dogfish' - Beginning flow run 'merciful-dogfish' for flow 'model-release'
+12:27:49.478 | INFO    | Task run 'prepare_task-26c' - Preparing and validating input; no training
+PREPARED 2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
+12:27:49.487 | INFO    | Task run 'prepare_task-26c' - Finished in state Completed()
+12:27:49.502 | INFO    | Flow run 'merciful-dogfish' - Preparation state=Completed key=2df0fe0fb06c66ffbaaac03c9bd01f54f80879f4842a38994c12a08fbb3b26ac
+12:27:49.509 | INFO    | Task run 'artifact_task-317' - Finished in state Completed()
+12:27:49.514 | INFO    | Task run 'gate_task-d2c' - Finished in state Completed()
 ALREADY_PUBLISHED fixture-B 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e
-11:25:25.871 | INFO    | Task run 'publish_task-745' - Finished in state Completed()
-11:25:26.815 | INFO    | Flow run 'indigo-wallaby' - Finished in state Completed()
-11:25:26.839 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8418
+12:27:49.518 | INFO    | Task run 'publish_task-649' - Finished in state Completed()
+12:27:50.471 | INFO    | Flow run 'merciful-dogfish' - Finished in state Completed()
+12:27:50.490 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8592
