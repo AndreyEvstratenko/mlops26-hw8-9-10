@@ -1,0 +1,736 @@
+{
+  "overall": {
+    "n": 50,
+    "correct": 0,
+    "valid": 0,
+    "errors": 0,
+    "accuracy": 0.0,
+    "format_rate": 0.0
+  },
+  "slices": {
+    "clinical_case": {
+      "n": 28,
+      "correct": 0,
+      "valid": 0,
+      "errors": 0,
+      "accuracy": 0.0,
+      "format_rate": 0.0
+    },
+    "diagnostic_reasoning": {
+      "n": 27,
+      "correct": 0,
+      "valid": 0,
+      "errors": 0,
+      "accuracy": 0.0,
+      "format_rate": 0.0
+    },
+    "short_question": {
+      "n": 22,
+      "correct": 0,
+      "valid": 0,
+      "errors": 0,
+      "accuracy": 0.0,
+      "format_rate": 0.0
+    },
+    "treatment_or_pharmacology": {
+      "n": 20,
+      "correct": 0,
+      "valid": 0,
+      "errors": 0,
+      "accuracy": 0.0,
+      "format_rate": 0.0
+    }
+  },
+  "per_item": [
+    {
+      "id": "mcr_00035",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_00675",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case"
+      ]
+    },
+    {
+      "id": "mcr_00803",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_01112",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_01259",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case"
+      ]
+    },
+    {
+      "id": "mcr_01355",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_01419",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_01553",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_01567",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_01598",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case"
+      ]
+    },
+    {
+      "id": "mcr_01603",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_02183",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_02694",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_02738",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_02921",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_03028",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_03196",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_04264",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_04300",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question"
+      ]
+    },
+    {
+      "id": "mcr_04517",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_04678",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_04753",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case"
+      ]
+    },
+    {
+      "id": "mcr_04783",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_04942",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_06143",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_06250",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_06377",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_06650",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_07868",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case"
+      ]
+    },
+    {
+      "id": "mcr_00488",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case"
+      ]
+    },
+    {
+      "id": "mcr_00588",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question"
+      ]
+    },
+    {
+      "id": "mcr_03203",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_03525",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_08229",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_03015",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_04879",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question"
+      ]
+    },
+    {
+      "id": "mcr_00042",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_01070",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case"
+      ]
+    },
+    {
+      "id": "mcr_05465",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_06258",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_08280",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_00186",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_08319",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question"
+      ]
+    },
+    {
+      "id": "mcr_00270",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question"
+      ]
+    },
+    {
+      "id": "mcr_00309",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_01745",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question",
+        "diagnostic_reasoning"
+      ]
+    },
+    {
+      "id": "mcr_05347",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_00626",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning",
+        "treatment_or_pharmacology"
+      ]
+    },
+    {
+      "id": "mcr_03432",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "short_question"
+      ]
+    },
+    {
+      "id": "mcr_07349",
+      "raw": "INVALID",
+      "parsed": null,
+      "valid": false,
+      "correct": false,
+      "error": null,
+      "slices": [
+        "clinical_case",
+        "diagnostic_reasoning"
+      ]
+    }
+  ],
+  "status": "complete",
+  "model": {
+    "kind": "adapter",
+    "name": "my-qwen-adapter",
+    "version": "1",
+    "run_id": "57fbd1f0f16b4f088378a227c4059e5a",
+    "uri": "models:/my-qwen-adapter/1"
+  },
+  "protocol_sha256": "f9ad7f9cacfdad2c9b7a3b4f9799b3f83ef5672af3672ce2a179fceaf7e776bc",
+  "golden_sha256": "563ef4db75701635b64666a487e486a12fb4e82c353db565b5adc31c6a8f3ccd",
+  "baseline_spec_sha256": "f71269b95f6b4e1e160fa25e9af6c973517cfebad15880b75b56c8184680b163",
+  "behavioral": {
+    "overall": {
+      "n": 3,
+      "correct": 0,
+      "valid": 0,
+      "errors": 0,
+      "accuracy": 0.0,
+      "format_rate": 0.0
+    },
+    "slices": {
+      "diagnostic_reasoning": {
+        "n": 2,
+        "correct": 0,
+        "valid": 0,
+        "errors": 0,
+        "accuracy": 0.0,
+        "format_rate": 0.0
+      },
+      "out_of_domain": {
+        "n": 1,
+        "correct": 0,
+        "valid": 0,
+        "errors": 0,
+        "accuracy": 0.0,
+        "format_rate": 0.0
+      },
+      "short_question": {
+        "n": 2,
+        "correct": 0,
+        "valid": 0,
+        "errors": 0,
+        "accuracy": 0.0,
+        "format_rate": 0.0
+      }
+    },
+    "per_item": [
+      {
+        "id": "behavior-format",
+        "raw": "INVALID",
+        "parsed": null,
+        "valid": false,
+        "correct": false,
+        "error": null,
+        "slices": [
+          "short_question",
+          "diagnostic_reasoning"
+        ]
+      },
+      {
+        "id": "behavior-paraphrase",
+        "raw": "INVALID",
+        "parsed": null,
+        "valid": false,
+        "correct": false,
+        "error": null,
+        "slices": [
+          "short_question",
+          "diagnostic_reasoning"
+        ]
+      },
+      {
+        "id": "behavior-refusal",
+        "raw": "INVALID",
+        "parsed": null,
+        "valid": false,
+        "correct": false,
+        "error": null,
+        "slices": [
+          "out_of_domain"
+        ]
+      }
+    ]
+  },
+  "leakage": {
+    "exact_or_group_intersections": 0,
+    "n_train_index": 4630,
+    "n_golden": 50,
+    "n_behavioral": 3
+  },
+  "outputs_sha256": "4177e3f4d7203e1a1f4b687966d4cd32e4f4ec688ae6965076d94921fc0b7467",
+  "evaluation_run_id": "8f382885e3f548d6907b19e6af2716e2",
+  "diagnostic_corrupted_copy": true
+}

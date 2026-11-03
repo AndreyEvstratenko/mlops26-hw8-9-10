@@ -1,0 +1,11 @@
+11:25:13.501 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8899
+See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+11:25:17.601 | INFO    | Flow run 'dramatic-barnacle' - Beginning flow run 'dramatic-barnacle' for flow 'model-release'
+11:25:17.620 | INFO    | Task run 'prepare_task-f51' - Finished in state Cached(type=COMPLETED)
+11:25:17.635 | INFO    | Flow run 'dramatic-barnacle' - Preparation state=Cached key=6fd1dabaf99d9247fd09cfd62a8b7f8c1868d8f6e5f5d6109663b658edb88ccf
+11:25:17.643 | INFO    | Task run 'artifact_task-1fd' - Finished in state Completed()
+11:25:17.645 | INFO    | Task run 'gate_task-f87' - Finished in state Completed()
+PUBLISHED fixture-B 9c7a56b9efa0a01ffac70de2fbb0d178ae8acbbe965f0b08b27f79a0ddda5d3e
+11:25:17.664 | INFO    | Task run 'publish_task-387' - Finished in state Completed()
+11:25:18.617 | INFO    | Flow run 'dramatic-barnacle' - Finished in state Completed()
+11:25:18.635 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8899

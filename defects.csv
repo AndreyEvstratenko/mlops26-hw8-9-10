@@ -1,8 +1,8 @@
-id,symptom,reproduce,expected,observed,root_cause,fix_commit,regression_test,before_log,after_log
-1,,,,,,,,,
-2,,,,,,,,,
-3,,,,,,,,,
-4,,,,,,,,,
-5,,,,,,,,,
-6,,,,,,,,,
-7,,,,,,,,,
+﻿id,symptom,reproduction,actual_before,expected,root_cause,fix,regression_test
+D01,Смена данных по прежнему пути использует старую подготовку,python lab.py --workspace NEW init; run; изменить input.txt; run,CACHE_HIT после смены байтов,Новая подготовка и новый ключ,cache_key хешировал путь без содержимого/config,Хеш байтов + canonical config + фактический код; durable result,test_01_crash_cache_and_changed_input; test_every_preparation_setting_invalidates_cache
+D02,Неполный/чужой отчёт допускает выпуск,python lab.py --workspace NEW run --report report-incomplete.json,PUBLISHED,Отказ; прежние байты accepted.json,Проверялось truthy passed без схемы и привязок,Строгий bool; complete; метрики; IDs и хеши; исходный quality gate,test_02_reports_rejected_without_pointer_change; test_report_binding_mismatch_rejected
+D03,Ошибка записи может разрушить принятый указатель,python -m unittest discover -s tests -p test_release.py -v,Прямая write_text; mock os.replace не вызывается,os.replace вызывается; при ошибке указатель неизменен,Публикация писала непосредственно в целевой файл,Временный файл рядом; flush/fsync; os.replace; cleanup,test_failed_atomic_replace_preserves_previous_bytes; test_disk_replace_failure_preserves_pointer_and_cleans_temp
+D04,Повтор запуска дублирует публикацию,python lab.py --workspace NEW run; повтор в новом процессе,Две строки publications.jsonl,Одно событие; две попытки,Безусловный append без устойчивого ID и восстановления,ID manifest+runtime+decision; write-ahead intent; atomic dedup journal,test_03_repeat_has_one_publication; test_pointer_journal_crash_reconciled_once
+D05,Сервис готов до окончания прогрева,python service.py --workspace NEW --warmup-seconds 10; GET /ready,200 до warmup_finished,503 и запрет генерации до реальной загрузки/прогрева,ready=True устанавливался в конструкторе,Фоновая загрузка; warmup backend; ready только после успеха,test_04_http_not_ready_during_warmup
+D06,Ответ рекламирует B при реально загруженной A,Запустить API на A; опубликовать B; POST /generate,Текст A; model_id B,Текст и метаданные A до перезапуска; B после загрузки,Метаданные читались из указателя на каждом запросе,ID/runtime из backend в памяти; явный restart и rollback,test_05_http_loaded_version_before_and_after_restart; evidence/experiments/http-A-B-A.json
+D07,Некорректный запрос запускает вычисление,POST /generate с пустым prompt или max_new_tokens=100000,200; calls увеличивается,4xx; calls не меняется,Backend вызывался без проверки входных значений,Типы/границы/токены проверяются до backend.generate,test_06_http_invalid_requests_never_call_backend

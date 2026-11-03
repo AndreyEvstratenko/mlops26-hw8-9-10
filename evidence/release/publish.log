@@ -1,0 +1,13 @@
+11:28:44.552 | INFO    | prefect - Starting temporary server on http://127.0.0.1:8422
+See https://www.prefect.io/docs/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+11:28:50.350 | INFO    | Flow run 'incredible-spider' - Beginning flow run 'incredible-spider' for flow 'model-release'
+11:28:50.407 | INFO    | Task run 'prepare_task-262' - Preparing and validating input; no training
+PREPARED ad28d1a3e8bb53b4f6ac51e58a63ab10e846b892e370ce58b4e7dcc4e809be31
+11:28:50.413 | INFO    | Task run 'prepare_task-262' - Finished in state Completed()
+11:28:50.424 | INFO    | Flow run 'incredible-spider' - Preparation state=Completed key=ad28d1a3e8bb53b4f6ac51e58a63ab10e846b892e370ce58b4e7dcc4e809be31
+11:28:51.862 | INFO    | Task run 'artifact_task-9d4' - Finished in state Completed()
+11:28:52.392 | INFO    | Task run 'gate_task-c25' - Finished in state Completed()
+ALREADY_PUBLISHED baseline-Qwen3-0.6B-c1899de289a04d12100db370d81485cdf75e47ca f536583c4a015f2e98df7162c763ed27e3e99b06cb724a3f4a1ba81e4335c9ab
+11:28:54.002 | INFO    | Task run 'publish_task-b3e' - Finished in state Completed()
+11:28:54.383 | INFO    | Flow run 'incredible-spider' - Finished in state Completed()
+11:28:54.400 | INFO    | prefect - Stopping temporary server on http://127.0.0.1:8422

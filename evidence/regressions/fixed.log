@@ -1,0 +1,11 @@
+test_01_crash_cache_and_changed_input (__main__.IntegrationTests.test_01_crash_cache_and_changed_input) ... ok
+test_02_reports_rejected_without_pointer_change (__main__.IntegrationTests.test_02_reports_rejected_without_pointer_change) ... ok
+test_03_repeat_has_one_publication (__main__.IntegrationTests.test_03_repeat_has_one_publication) ... ok
+test_04_http_not_ready_during_warmup (__main__.IntegrationTests.test_04_http_not_ready_during_warmup) ... ok
+test_05_http_loaded_version_before_and_after_restart (__main__.IntegrationTests.test_05_http_loaded_version_before_and_after_restart) ... ok
+test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.780s
+
+OK

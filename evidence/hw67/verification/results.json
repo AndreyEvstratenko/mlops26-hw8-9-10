@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "tests",
+      "command": [
+        "D:\\mlops26-hw6-7\\hw67-solution\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "test_behavioral_failure_rejected (test_eval.GateContract.test_behavioral_failure_rejected) ... ok\ntest_critical_regression_despite_average_growth (test_eval.GateContract.test_critical_regression_despite_average_growth) ... ok\ntest_equal_passes (test_eval.GateContract.test_equal_passes) ... ok\ntest_improvement_passes (test_eval.GateContract.test_improvement_passes) ... ok\ntest_missing_critical_slice_rejected (test_eval.GateContract.test_missing_critical_slice_rejected) ... ok\ntest_missing_nan_empty_error_and_incompatible_rejected (test_eval.GateContract.test_missing_nan_empty_error_and_incompatible_rejected) ... ok\ntest_regression_rejected (test_eval.GateContract.test_regression_rejected) ... ok\ntest_clean_data (test_eval.LeakageContract.test_clean_data) ... ok\ntest_duplicate_golden_questions_rejected (test_eval.LeakageContract.test_duplicate_golden_questions_rejected) ... ok\ntest_exact_overlap (test_eval.LeakageContract.test_exact_overlap) ... ok\ntest_group_overlap (test_eval.LeakageContract.test_group_overlap) ... ok\ntest_too_small_or_missing_behavior (test_eval.LeakageContract.test_too_small_or_missing_behavior) ... ok\ntest_no_registry_mutation_when_gate_rejects (test_eval.PromotionContract.test_no_registry_mutation_when_gate_rejects) ... ok\ntest_accuracy_uses_all_questions (test_eval.ScoreContract.test_accuracy_uses_all_questions) ... ok\ntest_missing_duplicate_empty_rejected (test_eval.ScoreContract.test_missing_duplicate_empty_rejected) ... ok\ntest_reordered_outputs_are_matched_by_id (test_eval.ScoreContract.test_reordered_outputs_are_matched_by_id) ... ok\ntest_slice_counts_and_per_item (test_eval.ScoreContract.test_slice_counts_and_per_item) ... ok\ntest_strict_json_and_label (test_eval.ScoreContract.test_strict_json_and_label) ... ok\ntest_wrong_label_is_valid_but_incorrect (test_eval.ScoreContract.test_wrong_label_is_valid_but_incorrect) ... ok\ntest_baseline_init_refuses_overwrite (test_pipeline.PipelineContract.test_baseline_init_refuses_overwrite) ... ok\ntest_negative_check_does_not_mutate_model_or_alias (test_pipeline.PipelineContract.test_negative_check_does_not_mutate_model_or_alias) ... Отчёты и сырые ответы сохранены. Далее: make eval; только после PASS - make promote\nPASS: испорченные ответы отклонены, alias не менялся\nok\ntest_pass_release_and_explicit_baseline_update (test_pipeline.PipelineContract.test_pass_release_and_explicit_baseline_update) ... Отчёты и сырые ответы сохранены. Далее: make eval; только после PASS - make promote\nchampion -> models:/fixture-model/2\nBaseline обновлён явно; старый сохранён. Следующая оценка сравнит с принятой версией\nok\ntest_protocol_or_raw_changes_rejected (test_pipeline.PipelineContract.test_protocol_or_raw_changes_rejected) ... Отчёты и сырые ответы сохранены. Далее: make eval; только после PASS - make promote\nok\ntest_refused_candidate_keeps_alias (test_pipeline.PipelineContract.test_refused_candidate_keeps_alias) ... Отчёты и сырые ответы сохранены. Далее: make eval; только после PASS - make promote\nok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.104s\n\nOK\n"
+    },
+    {
+      "name": "verification",
+      "command": [
+        "D:\\mlops26-hw6-7\\hw67-solution\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "verification",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "passed": true,
+      "returncode": 0,
+      "output": "test_direct_champion_bypass_rejected (test_regressions.LossGate.test_direct_champion_bypass_rejected) ... ok\ntest_passing_loss_registers_candidate (test_regressions.LossGate.test_passing_loss_registers_candidate) ... ok\ntest_rejected_loss_never_writes_registry (test_regressions.LossGate.test_rejected_loss_never_writes_registry) ... ok\ntest_baseline_generation_failure_rejected (test_regressions.StrictGate.test_baseline_generation_failure_rejected) ... ok\ntest_forged_slice_counts_rejected (test_regressions.StrictGate.test_forged_slice_counts_rejected) ... ok\ntest_membership_change_with_same_counts_rejected (test_regressions.StrictGate.test_membership_change_with_same_counts_rejected) ... ok\ntest_missing_behavior_and_empty_critical_rejected (test_regressions.StrictGate.test_missing_behavior_and_empty_critical_rejected) ... ok\ntest_duplicate_json_key_rejected (test_regressions.StrictScoring.test_duplicate_json_key_rejected) ... ok\ntest_duplicate_task_ids_rejected (test_regressions.StrictScoring.test_duplicate_task_ids_rejected) ... ok\ntest_generation_error_overrides_valid_json (test_regressions.StrictScoring.test_generation_error_overrides_valid_json) ... ok\ntest_overlapping_slices_do_not_inflate_overall (test_regressions.StrictScoring.test_overlapping_slices_do_not_inflate_overall) ... ok\ntest_six_independent_runs_keep_data_versions (test_sweep.SweepIsolation.test_six_independent_runs_keep_data_versions) ... 2026/10/27 03:54:07 INFO mlflow.tracking.fluent: Experiment with name 'sweep-regression' does not exist. Creating a new experiment.\n{\n  \"parent_id\": \"65a835c7419b4ba1a1cb71370c583ddb\",\n  \"rows\": [\n    {\n      \"run_id\": \"d882981451fa4faaaedf032a38476d5d\",\n      \"name\": \"qv-r4-low\"\n    },\n    {\n      \"run_id\": \"841e0cf5ff804d5c9ea61f85dcf72407\",\n      \"name\": \"qv-r4-high\"\n    },\n    {\n      \"run_id\": \"9b5954a007a9469ea0ba4c8dbd645f01\",\n      \"name\": \"qv-r8-low\"\n    },\n    {\n      \"run_id\": \"eb1af9e31a534f6aa230c2da6f7d7868\",\n      \"name\": \"qv-r8-high\"\n    },\n    {\n      \"run_id\": \"5ea5a2cd46894b9f9a88c1b4f479bd1c\",\n      \"name\": \"all-r8-low\"\n    },\n    {\n      \"run_id\": \"77a1196c878c42a5a82b2cc464eb139d\",\n      \"name\": \"all-r8-high\"\n    }\n  ],\n  \"provenance\": {\n    \"code_sha256\": \"code\",\n    \"config_sha256\": \"config\",\n    \"data_train_sha256\": \"train\",\n    \"data_val_sha256\": \"val\",\n    \"git_sha\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\n    \"git_dirty\": \"False\"\n  }\n}\nok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.438s\n\nOK\n"
+    },
+    {
+      "name": "syntax",
+      "passed": true,
+      "files": 24
+    },
+    {
+      "name": "compose_volume",
+      "passed": true,
+      "note": "Статическая проверка; не storage-check"
+    },
+    {
+      "name": "eval_structure",
+      "passed": true,
+      "n_golden": 50,
+      "n_behavioral": 3,
+      "slices": {
+        "clinical_case": 28,
+        "diagnostic_reasoning": 27,
+        "treatment_or_pharmacology": 20,
+        "short_question": 22
+      },
+      "leakage_checked": true,
+      "leakage_proof": {
+        "exact_or_group_intersections": 0,
+        "n_train_index": 4630,
+        "n_golden": 50,
+        "n_behavioral": 3
+      }
+    },
+    {
+      "name": "teacher_tests_windows_compatibility",
+      "passed": true,
+      "sha256": "73730c81bea14b91e2c4e950b2a25898d7d6512a54a597c0eb8dcd0b4454d587",
+      "original_sha256": "c42ac7788026de93c8066dbf47eec30ae16790d2da21ddc0e0693996d7bf04aa",
+      "diff": "docs/tests-compatibility.patch"
+    }
+  ],
+  "scope": "local_code_checks",
+  "training_summary_present": true,
+  "evaluation_reports_present": true,
+  "blockers": []
+}

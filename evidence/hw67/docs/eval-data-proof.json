@@ -1,0 +1,329 @@
+{
+  "exact_or_group_intersections": 0,
+  "n_train_index": 4630,
+  "n_golden": 50,
+  "n_behavioral": 3,
+  "near_duplicate_threshold": 0.85,
+  "near_duplicate_intersections": 0,
+  "nearest_train_neighbors": [
+    {
+      "id": "mcr_00035",
+      "train_id": "mcr_06091",
+      "jaccard_4gram": 0.017543859649122806
+    },
+    {
+      "id": "mcr_00675",
+      "train_id": "mcr_01768",
+      "jaccard_4gram": 0.045871559633027525
+    },
+    {
+      "id": "mcr_00803",
+      "train_id": "mcr_07551",
+      "jaccard_4gram": 0.008264462809917356
+    },
+    {
+      "id": "mcr_01112",
+      "train_id": "mcr_06356",
+      "jaccard_4gram": 0.013157894736842105
+    },
+    {
+      "id": "mcr_01259",
+      "train_id": "mcr_02772",
+      "jaccard_4gram": 0.029197080291970802
+    },
+    {
+      "id": "mcr_01355",
+      "train_id": "mcr_02399",
+      "jaccard_4gram": 0.029556650246305417
+    },
+    {
+      "id": "mcr_01419",
+      "train_id": "mcr_00633",
+      "jaccard_4gram": 0.01694915254237288
+    },
+    {
+      "id": "mcr_01553",
+      "train_id": "mcr_01939",
+      "jaccard_4gram": 0.016666666666666666
+    },
+    {
+      "id": "mcr_01567",
+      "train_id": "mcr_02820",
+      "jaccard_4gram": 0.027777777777777776
+    },
+    {
+      "id": "mcr_01598",
+      "train_id": "mcr_00782",
+      "jaccard_4gram": 0.032467532467532464
+    },
+    {
+      "id": "mcr_01603",
+      "train_id": "mcr_02810",
+      "jaccard_4gram": 0.018518518518518517
+    },
+    {
+      "id": "mcr_02183",
+      "train_id": "mcr_01372",
+      "jaccard_4gram": 0.02097902097902098
+    },
+    {
+      "id": "mcr_02694",
+      "train_id": "mcr_01155",
+      "jaccard_4gram": 0.03260869565217391
+    },
+    {
+      "id": "mcr_02738",
+      "train_id": "mcr_03107",
+      "jaccard_4gram": 0.02
+    },
+    {
+      "id": "mcr_02921",
+      "train_id": "mcr_00739",
+      "jaccard_4gram": 0.04291845493562232
+    },
+    {
+      "id": "mcr_03028",
+      "train_id": "mcr_07193",
+      "jaccard_4gram": 0.030534351145038167
+    },
+    {
+      "id": "mcr_03196",
+      "train_id": "mcr_05251",
+      "jaccard_4gram": 0.04814814814814815
+    },
+    {
+      "id": "mcr_04264",
+      "train_id": "mcr_06524",
+      "jaccard_4gram": 0.018518518518518517
+    },
+    {
+      "id": "mcr_04300",
+      "train_id": "mcr_06548",
+      "jaccard_4gram": 0.296875
+    },
+    {
+      "id": "mcr_04517",
+      "train_id": "mcr_01929",
+      "jaccard_4gram": 0.024539877300613498
+    },
+    {
+      "id": "mcr_04678",
+      "train_id": "mcr_03017",
+      "jaccard_4gram": 0.0423728813559322
+    },
+    {
+      "id": "mcr_04753",
+      "train_id": "mcr_00739",
+      "jaccard_4gram": 0.03225806451612903
+    },
+    {
+      "id": "mcr_04783",
+      "train_id": "mcr_02970",
+      "jaccard_4gram": 0.06593406593406594
+    },
+    {
+      "id": "mcr_04942",
+      "train_id": "mcr_00782",
+      "jaccard_4gram": 0.03260869565217391
+    },
+    {
+      "id": "mcr_06143",
+      "train_id": "mcr_02820",
+      "jaccard_4gram": 0.038461538461538464
+    },
+    {
+      "id": "mcr_06250",
+      "train_id": "mcr_03092",
+      "jaccard_4gram": 0.016736401673640166
+    },
+    {
+      "id": "mcr_06377",
+      "train_id": "mcr_00739",
+      "jaccard_4gram": 0.01953125
+    },
+    {
+      "id": "mcr_06650",
+      "train_id": "mcr_00928",
+      "jaccard_4gram": 0.04477611940298507
+    },
+    {
+      "id": "mcr_07868",
+      "train_id": "mcr_03496",
+      "jaccard_4gram": 0.024390243902439025
+    },
+    {
+      "id": "mcr_00488",
+      "train_id": "mcr_07026",
+      "jaccard_4gram": 0.045454545454545456
+    },
+    {
+      "id": "mcr_00588",
+      "train_id": "mcr_01274",
+      "jaccard_4gram": 0.017857142857142856
+    },
+    {
+      "id": "mcr_03203",
+      "train_id": "mcr_06524",
+      "jaccard_4gram": 0.03763440860215054
+    },
+    {
+      "id": "mcr_03525",
+      "train_id": "mcr_07480",
+      "jaccard_4gram": 0.01694915254237288
+    },
+    {
+      "id": "mcr_08229",
+      "train_id": "mcr_06558",
+      "jaccard_4gram": 0.03260869565217391
+    },
+    {
+      "id": "mcr_03015",
+      "train_id": "mcr_08348",
+      "jaccard_4gram": 0.0
+    },
+    {
+      "id": "mcr_04879",
+      "train_id": "mcr_00017",
+      "jaccard_4gram": 0.04081632653061224
+    },
+    {
+      "id": "mcr_00042",
+      "train_id": "mcr_02664",
+      "jaccard_4gram": 0.08387096774193549
+    },
+    {
+      "id": "mcr_01070",
+      "train_id": "mcr_03316",
+      "jaccard_4gram": 0.03125
+    },
+    {
+      "id": "mcr_05465",
+      "train_id": "mcr_07092",
+      "jaccard_4gram": 0.01652892561983471
+    },
+    {
+      "id": "mcr_06258",
+      "train_id": "mcr_02772",
+      "jaccard_4gram": 0.056338028169014086
+    },
+    {
+      "id": "mcr_08280",
+      "train_id": "mcr_04747",
+      "jaccard_4gram": 0.02564102564102564
+    },
+    {
+      "id": "mcr_00186",
+      "train_id": "mcr_04796",
+      "jaccard_4gram": 0.34615384615384615
+    },
+    {
+      "id": "mcr_08319",
+      "train_id": "mcr_06993",
+      "jaccard_4gram": 0.02564102564102564
+    },
+    {
+      "id": "mcr_00270",
+      "train_id": "mcr_04493",
+      "jaccard_4gram": 0.01694915254237288
+    },
+    {
+      "id": "mcr_00309",
+      "train_id": "mcr_02575",
+      "jaccard_4gram": 0.02127659574468085
+    },
+    {
+      "id": "mcr_01745",
+      "train_id": "mcr_06729",
+      "jaccard_4gram": 0.018518518518518517
+    },
+    {
+      "id": "mcr_05347",
+      "train_id": "mcr_01795",
+      "jaccard_4gram": 0.051470588235294115
+    },
+    {
+      "id": "mcr_00626",
+      "train_id": "mcr_05251",
+      "jaccard_4gram": 0.042105263157894736
+    },
+    {
+      "id": "mcr_03432",
+      "train_id": "mcr_00056",
+      "jaccard_4gram": 0.04807692307692308
+    },
+    {
+      "id": "mcr_07349",
+      "train_id": "mcr_05717",
+      "jaccard_4gram": 0.037383177570093455
+    }
+  ],
+  "train_tensor_link": {
+    "train": {
+      "n_raw": 4630,
+      "n_full_tensor": 4630,
+      "n_fast": 48,
+      "full_sha256": "9f61b0a2ee17963f5c87d898e942db0be58623bfbd769563b20d338d457cbbd6",
+      "active_sha256": "d1c58f9fe000d05b6c6ea478f53ae6c8299c02869592df21652748686ebbd8f6",
+      "all_active_examples_retokenized": true
+    },
+    "val": {
+      "n_raw": 949,
+      "n_full_tensor": 949,
+      "n_fast": 16,
+      "full_sha256": "47fd5bc39fd6faa0219e859e76be25decdf7e765754d4e1abac8bb2029c65fde",
+      "active_sha256": "fd61520af971f8962ff4a70acc608a293d0db7e6e103a007e3f725de5f310c0b",
+      "all_active_examples_retokenized": true
+    }
+  },
+  "sources": {
+    "train": {
+      "original": "D:\\MLOps\\hw4-broken\\data\\train.jsonl",
+      "copy": "data\\source\\train-raw.jsonl",
+      "sha256": "827e2e7a29cb17ac1e901bcdbc15ff8207d8f75f114077bed7247e8270070b83"
+    },
+    "val": {
+      "original": "D:\\MLOps\\hw4-broken\\data\\val.jsonl",
+      "copy": "data\\source\\val-raw.jsonl",
+      "sha256": "3ff8498922f20a0630f2041f33ba984175755f4dd40fcf8ce5a57abf76fe80b0"
+    },
+    "test": {
+      "original": "D:\\MLOps\\hw3-broken\\data\\test.jsonl",
+      "copy": "data\\source\\test-raw.jsonl",
+      "sha256": "743eb4de3281d754f16f09d4f6774f46636080a98fae668f8856e6fae8863a2b"
+    },
+    "parquet": {
+      "original": "D:\\MLOps\\hw3-broken\\data\\source\\data\\train-00000-of-00001.parquet",
+      "copy": "data\\source\\medical-source.parquet",
+      "sha256": "474c6f50eb58205e5b585df95392e1db82bc056261a8d1eb8d508a55e4729f9c"
+    }
+  },
+  "slices": {
+    "clinical_case": 28,
+    "diagnostic_reasoning": 27,
+    "treatment_or_pharmacology": 20,
+    "short_question": 22
+  },
+  "label_counts": {
+    "B": 9,
+    "D": 17,
+    "A": 12,
+    "C": 12
+  },
+  "golden_selection": "50 фиксированных id из test ДЗ 3; до получения ответов моделей",
+  "excluded": {
+    "mcr_00424": "Упоминается ЭКГ, которой нет; недостаточно данных для уверенного выбора тона сердца.",
+    "mcr_01568": "Условие не называет опухоль и не соответствует формулировке вариантов.",
+    "mcr_02461": "Повреждённый перевод описания зрачковых реакций.",
+    "mcr_03172": "Искажённая анатомическая формулировка и неоднозначный выбор лечения.",
+    "mcr_06182": "Не хватает длительности и триггеров боли для уверенного различения невралгии и кластерной боли.",
+    "mcr_06458": "Нет списка препаратов и достаточных данных для исключения псевдогиперкалиемии.",
+    "mcr_06856": "Критерий разрешения ДКА в исходнике не соответствует современному предпочтению прямой оценки кетонемии.",
+    "mcr_07200": "ЭКГ и анамнез без оценки функции ЛЖ недостаточны для однозначной лечебной рекомендации.",
+    "mcr_08191": "Неоднозначно сформулирована функция нормального и изменённого белка.",
+    "mcr_04072": "Рутинная биопсия эндометрия для оценки бесплодия — устаревшая предпосылка.",
+    "mcr_03933": "Схема антикоагуляции при раке требует пересмотра по современным рекомендациям.",
+    "mcr_07893": "Начало акушерского анамнеза отсутствует.",
+    "mcr_01034": "Отсутствует необходимое изображение ЭКГ."
+  },
+  "independent_clinical_review": false
+}

@@ -1,0 +1,10 @@
+{
+  "golden": "data/eval/golden.jsonl",
+  "training_index": "data/eval/training-index.jsonl",
+  "behavioral": "data/eval/behavioral.jsonl",
+  "critical_slices": ["clinical_case", "treatment_or_pharmacology"],
+  "seed": 42,
+  "system": "Реши учебный медицинский тест. Выбери ровно один правильный вариант из приведённых в вопросе. Верни только JSON с единственным полем answer и строковой меткой выбранного варианта: например, {\"answer\":\"A\"}. Не добавляй объяснений, markdown или других полей. На запрос за пределами медицинских тестов верни только {\"answer\":\"REFUSE\"}.",
+  "max_new_tokens": 16,
+  "enable_thinking": false
+}

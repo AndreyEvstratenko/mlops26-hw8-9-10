@@ -1,0 +1,17 @@
+{
+  "fast_environment": {
+    "python": "3.12.14",
+    "prefect": "3.9.1",
+    "fastapi": "0.150.0",
+    "uvicorn": "0.54.0"
+  },
+  "real_model_environment": {
+    "python": "3.12.14",
+    "fastapi": "0.142.2",
+    "uvicorn": "0.54.0",
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "peft": "0.21.0",
+    "numpy": "2.5.3"
+  }
+}

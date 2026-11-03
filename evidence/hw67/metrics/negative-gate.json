@@ -1,0 +1,8 @@
+{
+  "rejected": true,
+  "reason": "Регрессия общей format_rate",
+  "method": "scores_recomputed_from_corrupted_copy",
+  "original_outputs_unchanged": true,
+  "aliases_unchanged": true,
+  "note": "Испорчены только отдельные копии; метрики и per_item пересчитаны согласованно"
+}

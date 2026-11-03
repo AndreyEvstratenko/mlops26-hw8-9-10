@@ -1,0 +1,3 @@
+* text=auto eol=lf
+evidence/hw67/** -text
+tests/test_release.py -text

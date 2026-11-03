@@ -8,3 +8,12 @@ models/
 *.bin
 *.pt
 .lab*/
+.venv/
+__pycache__/
+*.pyc
+.prefect/
+runtime/
+artifacts/
+local-config.json
+.runs/
+.lab-demo/

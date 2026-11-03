@@ -1,0 +1,267 @@
+[
+  {
+    "id": "mcr_00035",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00675",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00803",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01112",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01259",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01355",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01419",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01553",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01567",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01598",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01603",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_02183",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_02694",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_02738",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_02921",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_03028",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_03196",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_04264",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_04300",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_04517",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_04678",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_04753",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_04783",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_04942",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_06143",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_06250",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_06377",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_06650",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_07868",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00488",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00588",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_03203",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_03525",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_08229",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_03015",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_04879",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00042",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01070",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_05465",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_06258",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_08280",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00186",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_08319",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00270",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00309",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_01745",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_05347",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_00626",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_03432",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "mcr_07349",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "behavior-format",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "behavior-paraphrase",
+    "raw": "INVALID",
+    "error": null
+  },
+  {
+    "id": "behavior-refusal",
+    "raw": "INVALID",
+    "error": null
+  }
+]

@@ -1,0 +1,1 @@
+{"evaluation_run_id":"8f382885e3f548d6907b19e6af2716e2","gate":{"passed":false,"reason":"Не все behavioral-кейсы пройдены"},"model":{"kind":"adapter","name":"my-qwen-adapter","run_id":"57fbd1f0f16b4f088378a227c4059e5a","uri":"models:/my-qwen-adapter/1","version":"1"}}

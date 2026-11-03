@@ -1,0 +1,133 @@
+test_01_crash_cache_and_changed_input (__main__.IntegrationTests.test_01_crash_cache_and_changed_input) ... FAIL
+test_02_reports_rejected_without_pointer_change (__main__.IntegrationTests.test_02_reports_rejected_without_pointer_change) ... 
+  test_02_reports_rejected_without_pointer_change (__main__.IntegrationTests.test_02_reports_rejected_without_pointer_change) (report='report-incomplete.json') ... FAIL
+  test_02_reports_rejected_without_pointer_change (__main__.IntegrationTests.test_02_reports_rejected_without_pointer_change) (report='report-A.json') ... FAIL
+test_03_repeat_has_one_publication (__main__.IntegrationTests.test_03_repeat_has_one_publication) ... FAIL
+test_04_http_not_ready_during_warmup (__main__.IntegrationTests.test_04_http_not_ready_during_warmup) ... FAIL
+test_05_http_loaded_version_before_and_after_restart (__main__.IntegrationTests.test_05_http_loaded_version_before_and_after_restart) ... FAIL
+test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) ... 
+  test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': ''}") ... FAIL
+  test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'x', 'max_new_tokens': 0}") ... FAIL
+  test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'x', 'max_new_tokens': 100000}") ... FAIL
+  test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'x', 'max_new_tokens': '2'}") ... FAIL
+  test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'x', 'max_new_tokens': True}") ... FAIL
+  test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx") ... FAIL
+test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) ... FAIL
+
+======================================================================
+FAIL: test_01_crash_cache_and_changed_input (__main__.IntegrationTests.test_01_crash_cache_and_changed_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 93, in test_01_crash_cache_and_changed_input
+    self.assertIn('PREPARED', self.command('run').stdout)
+AssertionError: 'PREPARED' not found in 'CACHE_HIT 19b8b0a21157bd3e44e7afd00735c6fd9cdf05ee7f668a5013f5c9f1ff16c1ac\nPUBLISHED fixture-B\n'
+
+======================================================================
+FAIL: test_02_reports_rejected_without_pointer_change (__main__.IntegrationTests.test_02_reports_rejected_without_pointer_change) (report='report-incomplete.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 101, in test_02_reports_rejected_without_pointer_change
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : PREPARED 19b8b0a21157bd3e44e7afd00735c6fd9cdf05ee7f668a5013f5c9f1ff16c1ac
+PUBLISHED fixture-B
+
+
+======================================================================
+FAIL: test_02_reports_rejected_without_pointer_change (__main__.IntegrationTests.test_02_reports_rejected_without_pointer_change) (report='report-A.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 101, in test_02_reports_rejected_without_pointer_change
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : CACHE_HIT 19b8b0a21157bd3e44e7afd00735c6fd9cdf05ee7f668a5013f5c9f1ff16c1ac
+PUBLISHED fixture-B
+
+
+======================================================================
+FAIL: test_03_repeat_has_one_publication (__main__.IntegrationTests.test_03_repeat_has_one_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 109, in test_03_repeat_has_one_publication
+    self.assertEqual(len(rows), 1, rows)
+AssertionError: 2 != 1 : ['{"model_id": "fixture-B", "prepared": "19b8b0a21157bd3e44e7afd00735c6fd9cdf05ee7f668a5013f5c9f1ff16c1ac"}', '{"model_id": "fixture-B", "prepared": "19b8b0a21157bd3e44e7afd00735c6fd9cdf05ee7f668a5013f5c9f1ff16c1ac"}']
+
+======================================================================
+FAIL: test_04_http_not_ready_during_warmup (__main__.IntegrationTests.test_04_http_not_ready_during_warmup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 115, in test_04_http_not_ready_during_warmup
+    self.assertEqual(self.http('/ready')[0], 503)
+AssertionError: 200 != 503
+
+======================================================================
+FAIL: test_05_http_loaded_version_before_and_after_restart (__main__.IntegrationTests.test_05_http_loaded_version_before_and_after_restart)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 127, in test_05_http_loaded_version_before_and_after_restart
+    self.assertEqual(answer['model_id'], 'fixture-A')
+AssertionError: 'fixture-B' != 'fixture-A'
+- fixture-B
+?         ^
++ fixture-A
+?         ^
+
+
+======================================================================
+FAIL: test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': ''}")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 143, in test_06_http_invalid_requests_never_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'x', 'max_new_tokens': 0}")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 143, in test_06_http_invalid_requests_never_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'x', 'max_new_tokens': 100000}")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 143, in test_06_http_invalid_requests_never_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'x', 'max_new_tokens': '2'}")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 143, in test_06_http_invalid_requests_never_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'x', 'max_new_tokens': True}")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 143, in test_06_http_invalid_requests_never_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend) (request="{'prompt': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 143, in test_06_http_invalid_requests_never_call_backend
+    self.assertTrue(400 <= status < 500, status)
+AssertionError: False is not true : 200
+
+======================================================================
+FAIL: test_06_http_invalid_requests_never_call_backend (__main__.IntegrationTests.test_06_http_invalid_requests_never_call_backend)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\1\Documents\Codex\2026-11-01\8-9\outputs\mlops26-hw8-9-10-solution\tests\test_integration.py", line 146, in test_06_http_invalid_requests_never_call_backend
+    self.assertEqual(self.http('/debug')[1]['calls'], before + 1)
+AssertionError: 7 != 1
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.202s
+
+FAILED (failures=13)
